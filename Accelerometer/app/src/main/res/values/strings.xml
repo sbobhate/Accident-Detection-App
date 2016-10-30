@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Accelerometer</string>
+    <string name="button">Back to Zero</string>
+</resources>
