@@ -1,0 +1,7 @@
+#Wed Oct 05 18:51:07 EDT 2016
+base.0=C\:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b6556646f8657017e53185abafb857bc4bb07036
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_82fecbb771aca1f454500979d8b83babfb621c83\\classes.dex
+base.1=C\:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_82fecbb771aca1f454500979d8b83babfb621c83
+file.0=C\:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_b6556646f8657017e53185abafb857bc4bb07036\\classes.dex

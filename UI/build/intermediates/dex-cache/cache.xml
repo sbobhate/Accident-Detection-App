@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-22.0.0_655b5c26dbf7016e6c4f04a7b9f205cd169d4d53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-22.0.0_8f71c2e41ce183e98e2c9fb72f06f360ee806c50\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-6.5.87_01709f00b0aa4e8a9ef4fb916eb801e0549136e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-22.0.0_b13fe8ce80506223921803ce94e2fbac9682c95a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-22.0.0_bf56e4859390c396104a2e9ba3e3ad1b69d822de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\3.22.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="11b7b899500f0518d19e971dd7626503ad96514b">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-3.22.0_8738730165114e83860eb486f1900338341cbf07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="dc9e5adc0115716d1176782089e824a76f42d9e5">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_82fecbb771aca1f454500979d8b83babfb621c83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.1.4_edcfa8dc170d41cc6accaac012f61f7c3ce38589\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="de5dba087a9d12cded96647955e5d8a1ffb5221b">
+        <dex dex="C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_b6556646f8657017e53185abafb857bc4bb07036\classes.dex" />
+    </item>
+
+</items>

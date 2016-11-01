@@ -1,0 +1,142 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:2:1-57:12
+	package
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:4:22-77
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:5:5-70
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:7:5-64
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.CAPTURE_VIDEO_OUTPUT
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:10:5-74
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:10:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:12:22-78
+uses-feature#0x00020000
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:13:5-15:35
+	android:glEsVersion
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:14:9-41
+	android:required
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:15:9-32
+uses-sdk
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:16:5-18:41
+MERGED from [com.android.support:appcompat-v7:22.0.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.0.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:6.5.87] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\AndroidManifest.xml:18:5-42
+MERGED from [com.facebook.android:facebook-android-sdk:3.22.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\3.22.0\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:18:9-38
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:17:9-35
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:19:5-55:19
+MERGED from [com.android.support:appcompat-v7:22.0.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.0.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:6.5.87] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\AndroidManifest.xml:20:5-24:19
+MERGED from [com.facebook.android:facebook-android-sdk:3.22.0] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\3.22.0\AndroidManifest.xml:24:5-20
+	android:label
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:22:9-41
+	android:allowBackup
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:20:9-35
+	android:icon
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:21:9-43
+	android:theme
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:23:9-40
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:24:9-25:69
+MERGED from [com.google.android.gms:play-services:6.5.87] C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:24:20-65
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:26:9-27:54
+	android:value
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:27:13-52
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:26:20-65
+activity#com.example.sanya.ec601_homework1.MainActivity
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:28:9-36:20
+	android:label
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:30:13-45
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:29:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:34:27-74
+activity#com.facebook.LoginActivity
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:37:9-40:20
+	android:label
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:39:13-34
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:38:13-54
+activity#com.example.sanya.ec601_homework1.HomeActivity
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:41:9-44:24
+	android:label
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:42:13-41
+activity#com.example.sanya.ec601_homework1.SignupActivity
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:45:9-53:20
+	android:label
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:47:13-45
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:46:13-43
+intent-filter#android.intent.action.signup_activity+android.intent.category.ALTERNATIVE
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:48:13-52:29
+action#android.intent.action.signup_activity
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:49:17-80
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:49:25-77
+category#android.intent.category.ALTERNATIVE
+ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:51:17-80
+	android:name
+		ADDED from C:\Users\jmago\Desktop\EC601_Homework1-20161003T233717Z\EC601_Homework1\app\src\main\AndroidManifest.xml:51:27-77

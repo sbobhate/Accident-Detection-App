@@ -1,0 +1,843 @@
+[
+    {
+        "outputFile": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 113,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 276,
+                        "endColumn": 113,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 107,
+                    "endOffset": 322
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endColumn": 107,
+                        "endOffset": 493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 122,
+                    "endOffset": 445
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 122,
+                        "endOffset": 616
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 450,
+                    "endColumn": 107,
+                    "endOffset": 553
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 621,
+                        "endColumn": 107,
+                        "endOffset": 724
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 558,
+                    "endColumn": 108,
+                    "endOffset": 662
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 729,
+                        "endColumn": 108,
+                        "endOffset": 833
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 667,
+                    "endColumn": 83,
+                    "endOffset": 746
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 838,
+                        "endColumn": 83,
+                        "endOffset": 917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 751,
+                    "endColumn": 102,
+                    "endOffset": 849
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 922,
+                        "endColumn": 102,
+                        "endOffset": 1020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 854,
+                    "endColumn": 118,
+                    "endOffset": 968
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1025,
+                        "endColumn": 118,
+                        "endOffset": 1139
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 973,
+                    "endColumn": 103,
+                    "endOffset": 1072
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1144,
+                        "endColumn": 103,
+                        "endOffset": 1243
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1077,
+                    "endColumn": 108,
+                    "endOffset": 1181
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1248,
+                        "endColumn": 108,
+                        "endOffset": 1352
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1186,
+                    "endColumn": 100,
+                    "endOffset": 1282
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1357,
+                        "endColumn": 100,
+                        "endOffset": 1453
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1287,
+                    "endColumn": 104,
+                    "endOffset": 1387
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1458,
+                        "endColumn": 104,
+                        "endOffset": 1558
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1392,
+                    "endColumn": 113,
+                    "endOffset": 1501
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1563,
+                        "endColumn": 113,
+                        "endOffset": 1672
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1506,
+                    "endColumn": 104,
+                    "endOffset": 1606
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1677,
+                        "endColumn": 104,
+                        "endOffset": 1777
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1611,
+                    "endColumn": 119,
+                    "endOffset": 1726
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1782,
+                        "endColumn": 119,
+                        "endOffset": 1897
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1731,
+                    "endColumn": 98,
+                    "endOffset": 1825
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-vi\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1902,
+                        "endColumn": 98,
+                        "endOffset": 1996
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1830,
+                    "endColumn": 160,
+                    "endOffset": 1986
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 671,
+                        "endColumn": 160,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1991,
+                    "endColumn": 151,
+                    "endOffset": 2138
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2699,
+                        "endColumn": 151,
+                        "endOffset": 2846
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2143,
+                    "endColumn": 112,
+                    "endOffset": 2251
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2416,
+                        "endColumn": 112,
+                        "endOffset": 2524
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2256,
+                    "endColumn": 127,
+                    "endOffset": 2379
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2156,
+                        "endColumn": 127,
+                        "endOffset": 2279
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2384,
+                    "endColumn": 170,
+                    "endOffset": 2550
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1985,
+                        "endColumn": 170,
+                        "endOffset": 2151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2555,
+                    "endColumn": 125,
+                    "endOffset": 2676
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1859,
+                        "endColumn": 125,
+                        "endOffset": 1980
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2681,
+                    "endColumn": 172,
+                    "endOffset": 2849
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 993,
+                        "endColumn": 176,
+                        "endOffset": 1165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2854,
+                    "endColumn": 132,
+                    "endOffset": 2982
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1726,
+                        "endColumn": 132,
+                        "endOffset": 1854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2987,
+                    "endColumn": 210,
+                    "endOffset": 3193
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1300,
+                        "endColumn": 210,
+                        "endOffset": 1506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 3198,
+                    "endColumn": 214,
+                    "endOffset": 3408
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1511,
+                        "endColumn": 214,
+                        "endOffset": 1721
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 3413,
+                    "endColumn": 129,
+                    "endOffset": 3538
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1170,
+                        "endColumn": 129,
+                        "endOffset": 1295
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 3543,
+                    "endColumn": 195,
+                    "endOffset": 3734
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3269,
+                        "endColumn": 195,
+                        "endOffset": 3460
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 3739,
+                    "endColumn": 130,
+                    "endOffset": 3865
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3138,
+                        "endColumn": 130,
+                        "endOffset": 3264
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3870,
+                    "endColumn": 160,
+                    "endOffset": 4026
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 832,
+                        "endColumn": 160,
+                        "endOffset": 988
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 4031,
+                    "endColumn": 171,
+                    "endOffset": 4198
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2966,
+                        "endColumn": 171,
+                        "endOffset": 3133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 4203,
+                    "endColumn": 114,
+                    "endOffset": 4313
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2851,
+                        "endColumn": 114,
+                        "endOffset": 2961
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 4318,
+                    "endColumn": 181,
+                    "endOffset": 4495
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 304,
+                        "endColumn": 181,
+                        "endOffset": 481
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 4500,
+                    "endColumn": 184,
+                    "endOffset": 4680
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 486,
+                        "endColumn": 184,
+                        "endOffset": 666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 4685,
+                    "endColumn": 133,
+                    "endOffset": 4814
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 133,
+                        "endOffset": 299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4819,
+                    "endColumn": 149,
+                    "endOffset": 4964
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3465,
+                        "endColumn": 149,
+                        "endOffset": 3610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4969,
+                    "endColumn": 251,
+                    "endOffset": 5216
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3743,
+                        "endColumn": 251,
+                        "endOffset": 3990
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 5221,
+                    "endColumn": 127,
+                    "endOffset": 5344
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3615,
+                        "endColumn": 127,
+                        "endOffset": 3738
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 5349,
+                    "endColumn": 108,
+                    "endOffset": 5453
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 3995,
+                        "endColumn": 108,
+                        "endOffset": 4099
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 5458,
+                    "endColumn": 169,
+                    "endOffset": 5623
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2529,
+                        "endColumn": 169,
+                        "endOffset": 2694
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 5628,
+                    "endColumn": 131,
+                    "endOffset": 5755
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2284,
+                        "endColumn": 131,
+                        "endOffset": 2411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 5760,
+                    "endColumn": 96,
+                    "endOffset": 5852
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4309,
+                        "endColumn": 96,
+                        "endOffset": 4401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 5857,
+                    "endColumn": 93,
+                    "endOffset": 5946
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4104,
+                        "endColumn": 93,
+                        "endOffset": 4193
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 5951,
+                    "endColumn": 110,
+                    "endOffset": 6057
+                },
+                "from": {
+                    "file": "C:\\Users\\jmago\\Desktop\\EC601_Homework1-20161003T233717Z\\EC601_Homework1\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services\\6.5.87\\res\\values-vi\\common_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4198,
+                        "endColumn": 110,
+                        "endOffset": 4304
+                    }
+                }
+            }
+        ]
+    }
+]
