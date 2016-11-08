@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
 
             // Write Headers
+            dataContainer[3] = description;
             writer.writeNext(dataContainer);
         }
     }
