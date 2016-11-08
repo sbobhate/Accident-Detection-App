@@ -10,9 +10,44 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="shantanubobhate.datatocsv.MainActivity">
 
-    <TextView
-        android:id="@+id/textViewPath"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filename"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextFilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a filename"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a Description"/>
+
+        <Button
+            android:id="@+id/buttonTracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Tracking"
+            android:onClick="toggleTracking"/>
+
+    </LinearLayout>
 </RelativeLayout>

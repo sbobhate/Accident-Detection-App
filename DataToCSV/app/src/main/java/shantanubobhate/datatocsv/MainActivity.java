@@ -1,8 +1,14 @@
 package shantanubobhate.datatocsv;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.opencsv.CSVWriter;
 
@@ -10,7 +16,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
 
 
     /*
@@ -27,62 +33,110 @@ public class MainActivity extends AppCompatActivity {
      */
 
     private FileWriter mFileWriter;
-    private TextView textViewPath;
+    private EditText editTextFilename, editTextDescription;
+    private Button buttonTracking;
+    private Boolean isTracking = false;
+    private File dir;
+    private CSVWriter writer;
+    private String[] dataContainer = {"Acceleration X", "Acceleration Y", "Acceleration Z", "..."};
+    private Sensor accelerometer;
+    private SensorManager mSensorManger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewPath = (TextView) findViewById(R.id.textViewPath);
+        // Initialize Views
+        editTextFilename = (EditText) findViewById(R.id.editTextFilename);
+        editTextDescription = (EditText) findViewById(R.id.editTextDescription);
+        buttonTracking = (Button) findViewById(R.id.buttonTracking);
 
         // Get the root directory
-        // This is the Device Storage
+        // .. This is the Device Storage
         File root = android.os.Environment.getExternalStorageDirectory();
-        // Get the path to the new directory to create
-        File dir = new File(root.getAbsolutePath() + "/DataToCSV");
-        // Check if this directory exists
-        if (!dir.exists()) {
-            dir.mkdirs();   // Create a new directory called DataToCSV
+        dir = new File(root.getAbsolutePath() + "/DataToCSV");              // Get the path to the new directory to create
+        if (!dir.exists()) {                                                // Check if this directory exists
+            dir.mkdirs();                                                   // Create a new directory called DataToCSV
         }
-        String fileName = "AnalysisData.csv";   // Declaring the file name
-        // Create new File object
-        File f = new File(dir, fileName);
 
-        String filePath = f.getAbsolutePath();  // Get the absolute path to the file
-        textViewPath.setText(filePath);
-        // Create the CSVWrite object which is from the opencsv library
-        CSVWriter writer = null;
-        if(f.exists() && !f.isDirectory()){
+        mSensorManger = (SensorManager) getSystemService(SENSOR_SERVICE);
+        accelerometer = mSensorManger.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mSensorManger.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    public void toggleTracking(View view) {
+        if (isTracking) {
+            isTracking = false;
+            buttonTracking.setText("Start Tracking");
             try {
-                mFileWriter = new FileWriter(filePath , true);
+                writer.close();                                                 // Close writer stream
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            writer = new CSVWriter(mFileWriter);
-        }
-        else {
-            try {
-                writer = new CSVWriter(new FileWriter(filePath));
-            } catch (IOException e) {
-                e.printStackTrace();
+        } else {
+            isTracking = true;
+            buttonTracking.setText("Stop Tracking");
+
+            String fileName = editTextFilename.getText().toString() + ".csv";   // Get the filename
+            String description = editTextDescription.getText().toString();
+
+            File f = new File(dir, fileName);                                   // Create a new file
+            String filePath = f.getAbsolutePath();                              // Get the absolute path to the file
+            writer = null;                                                      // Create the CSVWrite object which is from the opencsv library
+            if (f.exists() && !f.isDirectory()) {
+                try {
+                    mFileWriter = new FileWriter(filePath, true);              // Initialize file writer
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                writer = new CSVWriter(mFileWriter);                            // Initialize opencsv writer
+            } else {
+                try {
+                    writer = new CSVWriter(new FileWriter(filePath));           // Initialize opencsv writer
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+
+            // Write Headers
+            writer.writeNext(dataContainer);
         }
+    }
 
-        // THIS IS WHERE THE DATA IS WRITTEN //
-        String[] data = {"Acceleration", "Latitude", "Longitude", "..."};
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        // Only write to csv if app isTracking
+        if (isTracking) {
 
-        writer.writeNext(data);
+            // THIS IS WHERE THE DATA IS WRITTEN //
+            double ValueX = (Math.round(event.values[0]*1000)/1000.0);
+            double ValueY = (Math.round(event.values[1]*1000)/1000.0);
+            double ValueZ = (Math.round(event.values[2]*1000)/1000.0);
 
-        String[] value = {"4", "10", "101", "..."};
-        writer.writeNext(value);
-        ///////////////////////////////////////
-        // Find
+            dataContainer[0] = "" + ValueX;
+            dataContainer[1] = "" + ValueY;
+            dataContainer[2] = "" + ValueZ;
+            dataContainer[3] = "...";
 
+            writer.writeNext(dataContainer);
+            ///////////////////////////////////////
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
         try {
-            writer.close();
+            writer.close();                                                 // Close writer stream
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
+
