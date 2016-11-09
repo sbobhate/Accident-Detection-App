@@ -1,4 +1,4 @@
-package shantanubobhate.firebaseauth;
+package com.lifeline;
 
 /**
  * Created by shantanubobhate on 10/19/16.

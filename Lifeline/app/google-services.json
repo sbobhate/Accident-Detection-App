@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "302766035472",
-    "firebase_url": "https://fir-authapp-1af02.firebaseio.com",
-    "project_id": "fir-authapp-1af02",
-    "storage_bucket": "fir-authapp-1af02.appspot.com"
+    "project_number": "202348185995",
+    "firebase_url": "https://lifeline-db08a.firebaseio.com",
+    "project_id": "lifeline-db08a",
+    "storage_bucket": "lifeline-db08a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:302766035472:android:bd353a9baa5a022d",
+        "mobilesdk_app_id": "1:202348185995:android:bfb1b44636a6afcc",
         "android_client_info": {
-          "package_name": "shantanubobhate.firebaseauth"
+          "package_name": "com.lifeline"
         }
       },
       "oauth_client": [
         {
-          "client_id": "302766035472-mag3jmlebt1o0jtnoj8vefoj4ve47m49.apps.googleusercontent.com",
+          "client_id": "202348185995-ctguo741s9j036pfm08b80a7hg6750c6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDlVpnizk9CryYLmp7QYrjZj0fOXELQ0Xw"
+          "current_key": "AIzaSyDK2_YFx_Mkbm6773sYKNWYxGO7_HQ_Me0"
         }
       ],
       "services": {

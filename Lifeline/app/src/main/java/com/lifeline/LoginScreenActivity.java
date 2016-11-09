@@ -1,15 +1,14 @@
-package shantanubobhate.firebaseauth;
+package com.lifeline;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,8 +16,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginScreenActivity extends AppCompatActivity {
 
+    private static final String KEY = "com.lifeline.secret";
+    private static final String STATE = "com.lifeline.state";
     private EditText editTextEmail, editTextPassword;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
@@ -26,7 +27,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_screen);
+
+        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
+        editor.putString(STATE, "login");
+        editor.commit();
 
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -34,11 +39,17 @@ public class MainActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        if (firebaseAuth.getCurrentUser() != null) {
+            // Start Dashboard Activity
+            Toast.makeText(this, "User Already Logged In.", Toast.LENGTH_SHORT).show();
+            finish();
+            startActivity(new Intent(this, com.lifeline.DashboardActivity.class));
+        }
     }
 
-    public void register(View view)
+    public void login(View view)
     {
-
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
 
@@ -53,29 +64,31 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        progressDialog.setMessage("Registering...");
+        progressDialog.setMessage("Logging In...");
         progressDialog.show();
 
-        firebaseAuth.createUserWithEmailAndPassword(email, password)
+        firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
                         if (task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Welcome!", Toast.LENGTH_SHORT).show();
-                            // Login with details
+                            // Start Dashboard Activity
+                            Toast.makeText(LoginScreenActivity.this, "Logged In!", Toast.LENGTH_SHORT).show();
+                            finish();
+                            startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
                         }
                         else
                         {
-                            Toast.makeText(MainActivity.this, "Sorry could not register user.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginScreenActivity.this, "Incorrect Credentials.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
     }
 
-    public void goToSignIn(View view)
+    public void goToRegister(View view)
     {
         finish();
-        startActivity(new Intent(this, LoginScreenActivity.class));
+        startActivity(new Intent(this, SignUpActivity.class));
     }
 }

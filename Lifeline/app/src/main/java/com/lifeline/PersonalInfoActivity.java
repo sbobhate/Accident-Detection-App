@@ -1,53 +1,43 @@
-package shantanubobhate.firebaseauth;
+package com.lifeline;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.api.model.StringList;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.Vector;
 
-public class DashboardActivity extends AppCompatActivity {
+public class PersonalInfoActivity extends AppCompatActivity {
 
-    private TextView textViewEmail;
+    private static final String KEY = "com.lifeline.secret";
+    private static final String STATE = "com.lifeline.state";
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
-
     private EditText editTextFirstName, editTextLastName, editTextPolicyNumber, editTextPhoneNumber;
     private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_personal_info);
 
-        textViewEmail = (TextView) findViewById(R.id.textViewEmail);
+        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
+        editor.putString(STATE, "personalInfo");
+        editor.commit();
+
         editTextFirstName = (EditText) findViewById(R.id.editTextFirstName);
         editTextLastName = (EditText) findViewById(R.id.editTextLastName);
         editTextPolicyNumber = (EditText) findViewById(R.id.editTextPolicyNumber);
@@ -63,8 +53,6 @@ public class DashboardActivity extends AppCompatActivity {
         }
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
-
-        textViewEmail.setText("Welcome " + user.getEmail());
 
         progressDialog = new ProgressDialog(this);
 
@@ -89,26 +77,14 @@ public class DashboardActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Toast.makeText(DashboardActivity.this, "Could not retrieve data.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PersonalInfoActivity.this, "Could not retrieve data.", Toast.LENGTH_SHORT).show();
             }
         });
 
         progressDialog.dismiss();
     }
 
-    public void logout(View view)
-    {
-        try {
-            firebaseAuth.signOut();
-            finish();
-            startActivity(new Intent(this, LoginScreenActivity.class));
-        } catch (Exception e) {
-            Toast.makeText(this, "Unsuccessful", Toast.LENGTH_SHORT).show();
-            e.printStackTrace();
-        }
-    }
-
-    public void saveToDatabase(View view)
+    public void goToVerification(View view)
     {
         String firstName = editTextFirstName.getText().toString().trim();
         String lastName = editTextLastName.getText().toString().trim();
@@ -124,10 +100,9 @@ public class DashboardActivity extends AppCompatActivity {
 
         databaseReference.child(user.getUid()).setValue(userInformation);
 
-        //EmergencyContacts emergencyContacts = new EmergencyContacts("value1", "value2", "value3");
-        //databaseReference.child(user.getUid()).setValue(emergencyContacts);
-
         progressDialog.dismiss();
-        Toast.makeText(DashboardActivity.this, "Save Successful!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PersonalInfoActivity.this, "Save Successful!", Toast.LENGTH_SHORT).show();
+        finish();
+        startActivity(new Intent(this, PhoneVerificationActivity.class));
     }
 }

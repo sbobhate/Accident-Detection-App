@@ -1,4 +1,4 @@
-package shantanubobhate.firebaseauth;
+package com.lifeline;
 
 import org.junit.Test;
 
