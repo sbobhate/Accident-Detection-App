@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="0dp"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="10sp"
+        android:paddingRight="30sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cont_name"
+            android:textColor="#003366"
+            android:text="Name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cont_number"
+            android:textColor="#003366"
+            android:text="Mobile number"
+            android:layout_below="@+id/cont_name"
+            android:layout_marginTop="3sp"/>
+
+        <TextView
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:background="@null"
+            android:text="Edit"
+            android:textColor="#FF710B"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/btn_edit"
+            android:layout_marginTop="10sp"
+            android:textSize="16sp"
+            android:textIsSelectable="false"
+            android:layout_below="@+id/cont_number" />
+        <TextView
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:background="@null"
+            android:text="Delete"
+            android:textColor="#FF710B"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/btn_delete"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10sp"
+            android:textSize="16sp"
+            android:layout_below="@+id/cont_number" />
+
+        <ImageView
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:id="@+id/imageView7"
+            android:src="@drawable/orange_edit"
+            android:layout_alignTop="@+id/btn_edit"
+            android:layout_alignLeft="@+id/btn_edit"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="35sp" />
+
+        <ImageView
+            android:layout_width="14sp"
+            android:layout_height="14sp"
+            android:id="@+id/imageView8"
+            android:src="@drawable/orange_delete"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_alignLeft="@+id/btn_delete"
+            android:layout_alignStart="@+id/btn_delete"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="35dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

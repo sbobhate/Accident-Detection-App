@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!--<item name="android:colorPrimary">#003366</item>-->
+        <!--<item name="android:colorPrimaryDark">#336699</item>-->
+        <item name="android:colorAccent">@color/accent</item>4
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <!--<item name="android:navigationBarColor">#898069</item>-->
+        <!--<item name="android:actionBarTheme">@color/primary_dark</item>-->
+
+    </style>
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#003366</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/actionbar_background</item>
+    </style>
+
+    <color name="actionbar_background">#003366</color>
+</resources>

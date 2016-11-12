@@ -1,0 +1,64 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+            android:layout_height="fill_parent"  tools:context=".MainActivity"
+            android:background="#ffffff"
+            android:id="@+id/relativeLayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler"
+                android:background="#cccccc"
+                android:layout_above="@+id/buttonLayout">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listView"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:background="#cccccc"
+                android:id="@+id/buttonLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:layout_width="330sp"
+                    android:layout_height="50sp"
+                    android:text=" Add New Contact"
+                    android:textColor="#bfdfdf"
+                    android:textSize="15sp"
+                    android:background="#003366"
+                    android:id="@+id/btn_add"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </FrameLayout>
+    <!-- The navigation drawer -->
+    <ExpandableListView
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:id="@+id/left_drawer"
+        android:layout_gravity="start"
+        android:background="#fff"
+        />
+</android.support.v4.widget.DrawerLayout>

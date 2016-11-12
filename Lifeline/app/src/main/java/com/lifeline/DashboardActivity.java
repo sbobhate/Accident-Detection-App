@@ -57,7 +57,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     public void goToContacts(View view) {
-
+        Intent intent=new Intent(this, MyEmerContActivity.class);
+        startActivity(intent);
     }
 
     public void goToPolicyInfo(View view) {

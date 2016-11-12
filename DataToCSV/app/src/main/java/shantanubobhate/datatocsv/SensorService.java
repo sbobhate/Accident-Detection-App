@@ -1,16 +1,20 @@
 package shantanubobhate.datatocsv;
 
+import android.Manifest;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Binder;
 import android.os.IBinder;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 
 import com.opencsv.CSVWriter;
 
@@ -39,6 +43,11 @@ public class SensorService extends Service implements SensorEventListener {
 
         // Get the root directory
         // .. This is the Device Storage
+//        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+//                Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(MainActivity.ACTIVITY_SERVICE, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
+//                    1);
+//        }
         File root = android.os.Environment.getExternalStorageDirectory();
         dir = new File(root.getAbsolutePath() + "/DataToCSV");              // Get the path to the new directory to create
         if (!dir.exists()) {                                                // Check if this directory exists
