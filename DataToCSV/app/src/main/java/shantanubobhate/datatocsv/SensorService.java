@@ -43,11 +43,6 @@ public class SensorService extends Service implements SensorEventListener {
 
         // Get the root directory
         // .. This is the Device Storage
-//        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-//                Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(MainActivity.ACTIVITY_SERVICE, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-//                    1);
-//        }
         File root = android.os.Environment.getExternalStorageDirectory();
         dir = new File(root.getAbsolutePath() + "/DataToCSV");              // Get the path to the new directory to create
         if (!dir.exists()) {                                                // Check if this directory exists
@@ -115,6 +110,7 @@ public class SensorService extends Service implements SensorEventListener {
         mSensorManager.unregisterListener(this);                            // Unregister sensor when not in use
 
         mNotificationManager.cancel(NOTIFICATION);
+        stopSelf();
     }
 
     @Override
@@ -122,7 +118,8 @@ public class SensorService extends Service implements SensorEventListener {
         // Get acceleration values
         dataContainer[0] = "" + (Math.round(sensorEvent.values[0]*1000)/1000.0);
         dataContainer[1] = "" + (Math.round(sensorEvent.values[1]*1000)/1000.0);
-        dataContainer[1] = "" + (Math.round(sensorEvent.values[2]*1000)/1000.0);
+        dataContainer[2] = "" + (Math.round(sensorEvent.values[2]*1000)/1000.0);
+        dataContainer[3] = "";
         writer.writeNext(dataContainer);
     }
 
@@ -143,7 +140,6 @@ public class SensorService extends Service implements SensorEventListener {
                     .setTicker(text)
                     .setContentTitle("Hello there!")
                     .setContentText(text)
-                    .setContentIntent(contentIntent)
                     .build();
 
             mNotificationManager.notify(NOTIFICATION, mNotification);

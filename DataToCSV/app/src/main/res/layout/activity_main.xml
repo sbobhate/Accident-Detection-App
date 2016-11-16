@@ -28,7 +28,7 @@
             android:id="@+id/editTextFilename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter a filename"/>
+            android:hint="Enter a filename (without .csv)"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,11 +40,11 @@
             android:id="@+id/editTextDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter a Description"/>
+            android:hint="Enter a Description of the Activity"/>
 
         <Button
             android:id="@+id/buttonTracking"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Start Tracking"
             android:onClick="toggleTracking"/>
