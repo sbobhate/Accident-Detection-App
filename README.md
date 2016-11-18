@@ -3,11 +3,11 @@ Repository for all the code and files concerning the Accident Prevention and Det
 
 ## Developers
 
-..* **Shantanu Bobhate**
-..* **Sanya Kalra**
-..* **Jennifer Goodell**
-..* **Kexuan Cui**
-..* **Xianglin Zhou**
+* **Shantanu Bobhate**
+* **Sanya Kalra**
+* **Jennifer Goodell**
+* **Kexuan Cui**
+* **Xianglin Zhou**
 
 ## Description
 
