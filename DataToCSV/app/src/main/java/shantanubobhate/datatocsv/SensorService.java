@@ -130,9 +130,10 @@ public class SensorService extends Service implements SensorEventListener {
     private NotificationManager mNotificationManager;
 
     private void showNotification() {
-        CharSequence text = "Sensor Service Started";
+        CharSequence text = "Started Data Collection";
 
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
+        // PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
+        // PendingIntent deleteIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN) {
             Notification mNotification = new Notification.Builder(this)
@@ -140,6 +141,7 @@ public class SensorService extends Service implements SensorEventListener {
                     .setTicker(text)
                     .setContentTitle("Hello there!")
                     .setContentText(text)
+                    .setAutoCancel(false)
                     .build();
 
             mNotificationManager.notify(NOTIFICATION, mNotification);

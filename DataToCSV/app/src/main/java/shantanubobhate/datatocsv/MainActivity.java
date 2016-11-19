@@ -166,10 +166,9 @@ public class MainActivity extends AppCompatActivity  {
         } else {
             if (hasPermission) {
                 String fileName = "";
+                fileName = editTextFilename.getText().toString() + ".csv";
                 if (fileName == "") {
                     fileName = "data.csv";
-                } else {
-                    fileName = editTextFilename.getText().toString() + ".csv";
                 }
                 String description = editTextDescription.getText().toString();
                 isTracking = true;
