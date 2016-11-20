@@ -21,14 +21,13 @@
         <activity android:name=".DashboardActivity" />
         <activity android:name=".PersonalInfoActivity" />
         <activity android:name=".PhoneVerificationActivity" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity" />
         <activity
             android:name=".MyEmerContActivity"
-            android:label="@string/app_name"
-            >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.emergency_act" />
-                
+
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
@@ -37,7 +36,7 @@
             android:label=" add contact">
             <intent-filter>
                 <action android:name="android.intent.action.addemergency_activity" />
-                
+
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
@@ -46,10 +45,16 @@
             android:label=" Edit contact">
             <intent-filter>
                 <action android:name="android.intent.action.editcontact_activity" />
-                
+
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".SensorService"
+            android:exported="false" />
+
+        <activity android:name=".TrackingActivity"></activity>
     </application>
 
 </manifest>

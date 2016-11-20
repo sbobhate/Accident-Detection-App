@@ -107,6 +107,12 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        doUnbindService();
+    }
+
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         // Save UI state changes to the savedInstanceState.

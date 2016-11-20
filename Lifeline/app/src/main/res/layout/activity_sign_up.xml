@@ -31,7 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter Email"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -39,7 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter Password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:textColor="@color/black"/>
 
         <Button
             android:layout_width="wrap_content"

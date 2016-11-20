@@ -30,7 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter First Name"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextLastName"
@@ -38,7 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter Last Name"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextPolicyNumber"
@@ -46,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter Policy Number"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextPhoneNumber"
@@ -54,7 +57,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter Phone Number"
-            android:inputType="phone"/>
+            android:inputType="phone"
+            android:textColor="@color/black"/>
 
         <Button
             android:layout_width="match_parent"

@@ -15,6 +15,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 
 import com.opencsv.CSVWriter;
 
@@ -38,6 +39,8 @@ public class SensorService extends Service implements SensorEventListener {
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
+        Log.d("SERVICE DEBUG", "Service Bound");
+
         String fileName = intent.getStringExtra("filename");
         String description = intent.getStringExtra("description");
 
@@ -75,6 +78,7 @@ public class SensorService extends Service implements SensorEventListener {
 
     @Override
     public boolean onUnbind(Intent intent) {
+        Log.d("SERVICE DEBUG", "Service UnBound");
         try {
             writer.close();                                                 // Close writer stream
         } catch (IOException e) {
@@ -95,6 +99,7 @@ public class SensorService extends Service implements SensorEventListener {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.d("SERVICE DEBUG", "Service Created");
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -107,6 +112,8 @@ public class SensorService extends Service implements SensorEventListener {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        Log.d("SERVICE DEBUG", "Service Destroyed");
+
         mSensorManager.unregisterListener(this);                            // Unregister sensor when not in use
 
         mNotificationManager.cancel(NOTIFICATION);
@@ -116,6 +123,7 @@ public class SensorService extends Service implements SensorEventListener {
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         // Get acceleration values
+        Log.d("DATA DEBUG", "Service Data Changed");
         dataContainer[0] = "" + (Math.round(sensorEvent.values[0]*1000)/1000.0);
         dataContainer[1] = "" + (Math.round(sensorEvent.values[1]*1000)/1000.0);
         dataContainer[2] = "" + (Math.round(sensorEvent.values[2]*1000)/1000.0);
@@ -130,6 +138,7 @@ public class SensorService extends Service implements SensorEventListener {
     private NotificationManager mNotificationManager;
 
     private void showNotification() {
+        Log.d("SERVICE DEBUG", "Notification Shown");
         CharSequence text = "Started Data Collection";
 
         // PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, MainActivity.class), 0);
