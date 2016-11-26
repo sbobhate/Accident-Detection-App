@@ -26,8 +26,8 @@ We used Google Firebase to help us conduct user authentication and maintain a ba
 Add the following dependency to the app-level **build.gradle** file:
 
 ```
-    compile 'com.google.firebase:firebase-auth:9.6.1'
-    compile 'com.google.firebase:firebase-database:9.6.1'
+compile 'com.google.firebase:firebase-auth:9.6.1'
+compile 'com.google.firebase:firebase-database:9.6.1'
 ```
 
 Code for Firebase Authentication:
