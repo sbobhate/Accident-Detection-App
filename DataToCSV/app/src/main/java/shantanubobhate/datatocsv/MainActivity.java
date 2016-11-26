@@ -73,14 +73,14 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if (savedInstanceState != null) {
-            // Restore value of members from saved state
-            isTracking = savedInstanceState.getBoolean("IsTracking");
-            isBound = savedInstanceState.getBoolean("IsBound");
-            hasPermission = savedInstanceState.getBoolean("HasPermission");
-        } else {
-            // Probably initialize members with default values for a new instance
-        }
+//        if (savedInstanceState != null) {
+//            // Restore value of members from saved state
+//            isTracking = savedInstanceState.getBoolean("IsTracking");
+//            isBound = savedInstanceState.getBoolean("IsBound");
+//            hasPermission = savedInstanceState.getBoolean("HasPermission");
+//        } else {
+//            // Probably initialize members with default values for a new instance
+//        }
 
         // Initialize Views
         editTextFilename = (EditText) findViewById(R.id.editTextFilename);
@@ -199,5 +199,9 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onStop() {
         super.onStop();
+    }
+
+    public void viewPlot(View view) {
+        startActivity(new Intent(this, PlotActivity.class));
     }
 }

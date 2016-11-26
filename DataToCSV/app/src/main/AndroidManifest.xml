@@ -21,8 +21,9 @@
 
         <service
             android:name=".SensorService"
-            android:exported="false">
-        </service>
+            android:exported="false"></service>
+
+        <activity android:name=".PlotActivity"></activity>
     </application>
 
 </manifest>
