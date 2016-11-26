@@ -105,7 +105,7 @@ protected void onCreate(Bundle savedInstanceState) {
     
     ...
   
-    // To retrieve data
+    /* To retrieve data */
     databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -125,7 +125,7 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     });
     
-    // Write Data
+    /* Write Data */
     UserInformation userInformation = new UserInformation(firstName, lastName, policyNumber, phoneNumber);  
     databaseReference.child(user.getUid()).setValue(userInformation);
     
