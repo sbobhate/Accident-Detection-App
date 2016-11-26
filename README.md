@@ -22,6 +22,41 @@ We used Android Studio to develop the app. It can be downloaded from [here](http
 ### Firebase
    
 We used Google Firebase to help us conduct user authentication and maintain a backend database for our application. We used the following videos and resources to understand how to incorporate Firebase into our app.
+
+Add the following dependency to the app-level **build.gradle** file:
+
+```
+    compile 'com.google.firebase:firebase-auth:9.6.1'
+    compile 'com.google.firebase:firebase-database:9.6.1'
+```
+
+Code for Firebase Authentication:
+
+```
+private FirebaseAuth firebaseAuth
+
+...
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(savedInstanceState);
+
+  firebaseAuth = FirebaseAuth.getInstance();
+  
+  firebaseAuth.signInWithEmailAndPassword(email, password)
+        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    // Do something
+                }
+                else
+                {
+                    // Display an Error Message
+                }
+            }
+        });
+}
+```
     
 ### Google Api
 
@@ -30,8 +65,8 @@ We used the Google Maps Api to collect the users coordinates which we used to tr
 ## Contents
 
 This repository contains 2 android projects:
-..* Lifeline
-..* DataToCSV
+* Lifeline
+* DataToCSV
   
 ### Lifeline
   
