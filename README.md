@@ -150,7 +150,9 @@ Code for Firebase Database:
   }
 ```
 
-![](https://drive.google.com/open?id=0B3m7cX3DgKxeM0dVaTFGWEdBR1E)
+A Demo for Firebase Authentication on Android:
+
+![](https://youtu.be/cibssj4-WMw)
 
 ### Google Api
 
