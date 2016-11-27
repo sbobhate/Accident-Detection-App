@@ -26,129 +26,131 @@ We used Google Firebase to help us conduct user authentication and maintain a ba
 Add the following dependency to the app-level **build.gradle** file:
 
 ```java
-compile 'com.google.firebase:firebase-auth:9.6.1'
-compile 'com.google.firebase:firebase-database:9.6.1'
+  compile 'com.google.firebase:firebase-auth:9.6.1'
+  compile 'com.google.firebase:firebase-database:9.6.1'
 ```
 
 Code for Firebase Authentication:
 
 ```java
-private FirebaseAuth firebaseAuth
-
-...
-
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(savedInstanceState);
+  private FirebaseAuth firebaseAuth
 
   ...
 
-  firebaseAuth = FirebaseAuth.getInstance();
-  
-  /* To Create a new User */
-  firebaseAuth.createUserWithEmailAndPassword(email, password)
-        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                progressDialog.dismiss();
-                if (task.isSuccessful()) {
-                    // Do something
-                }
-                else
-                {
-                    // Display an Error Message
-                }
-            }
-        });
-  
-  ...
-  
-  /* To Sign In a User */
-  firebaseAuth.signInWithEmailAndPassword(email, password)
-        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    // Do something
-                }
-                else
-                {
-                    // Display an Error Message
-                }
-            }
-        });
-}
-```
-    
-Code for Firebase Database:
-
-```java
-private FirebaseAuth firebaseAuth;
-private DatabaseReference databaseReference;
-
-...
-@Override
-protected void onCreate(Bundle savedInstanceState) {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
     ...
 
     firebaseAuth = FirebaseAuth.getInstance();
-    
-    final FirebaseUser user = firebaseAuth.getCurrentUser();
-    if (user == null) {
-        finish();
-        startActivity(new Intent(this, LoginScreenActivity.class));
-    }
 
-    databaseReference = FirebaseDatabase.getInstance().getReference();
-    
+    /* To Create a new User */
+    firebaseAuth.createUserWithEmailAndPassword(email, password)
+          .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+              @Override
+              public void onComplete(@NonNull Task<AuthResult> task) {
+                  progressDialog.dismiss();
+                  if (task.isSuccessful()) {
+                      // Do something
+                  }
+                  else
+                  {
+                      // Display an Error Message
+                  }
+              }
+          });
+
     ...
-  
-    /* To retrieve data */
-    databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            ArrayList<String> values = new ArrayList<String>(4);
-            for (DataSnapshot child : dataSnapshot.getChildren()) {
-                values.add(child.getValue().toString());
-            }
 
-            if (!values.isEmpty()) {
-                // Do something with the values
-            }
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-            // Display an Error Message
-        }
-    });
-    
-    /* Write Data */
-    UserInformation userInformation = new UserInformation(firstName, lastName, policyNumber, phoneNumber);  
-    databaseReference.child(user.getUid()).setValue(userInformation);
-    
-    ...
-}
-
-...
-
-public class UserInformation {
-
-    public String firstName, lastName, policyNumber, phoneNumber;
-
-    public UserInformation() {
-    }
-
-    public UserInformation(String firstName, String lastName, String policyNumber, String phoneNumber) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.policyNumber = policyNumber;
-        this.phoneNumber = phoneNumber;
-    }
-}
+    /* To Sign In a User */
+    firebaseAuth.signInWithEmailAndPassword(email, password)
+          .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+              @Override
+              public void onComplete(@NonNull Task<AuthResult> task) {
+                  if (task.isSuccessful()) {
+                      // Do something
+                  }
+                  else
+                  {
+                      // Display an Error Message
+                  }
+              }
+          });
+  }
 ```
+    
+Code for Firebase Database:
+
+```java
+  private FirebaseAuth firebaseAuth;
+  private DatabaseReference databaseReference;
+
+  ...
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+
+      ...
+
+      firebaseAuth = FirebaseAuth.getInstance();
+
+      final FirebaseUser user = firebaseAuth.getCurrentUser();
+      if (user == null) {
+          finish();
+          startActivity(new Intent(this, LoginScreenActivity.class));
+      }
+
+      databaseReference = FirebaseDatabase.getInstance().getReference();
+
+      ...
+
+      /* To retrieve data */
+      databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+          @Override
+          public void onDataChange(DataSnapshot dataSnapshot) {
+              ArrayList<String> values = new ArrayList<String>(4);
+              for (DataSnapshot child : dataSnapshot.getChildren()) {
+                  values.add(child.getValue().toString());
+              }
+
+              if (!values.isEmpty()) {
+                  // Do something with the values
+              }
+          }
+
+          @Override
+          public void onCancelled(DatabaseError databaseError) {
+              // Display an Error Message
+          }
+      });
+
+      /* Write Data */
+      UserInformation userInformation = new UserInformation(firstName, lastName, policyNumber, phoneNumber);  
+      databaseReference.child(user.getUid()).setValue(userInformation);
+
+      ...
+  }
+
+  ...
+
+  public class UserInformation {
+
+      public String firstName, lastName, policyNumber, phoneNumber;
+
+      public UserInformation() {
+      }
+
+      public UserInformation(String firstName, String lastName, String policyNumber, String phoneNumber) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.policyNumber = policyNumber;
+          this.phoneNumber = phoneNumber;
+      }
+  }
+```
+
+![](https://drive.google.com/open?id=0B3m7cX3DgKxeM0dVaTFGWEdBR1E)
 
 ### Google Api
 
