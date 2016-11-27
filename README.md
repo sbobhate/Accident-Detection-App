@@ -25,14 +25,14 @@ We used Google Firebase to help us conduct user authentication and maintain a ba
 
 Add the following dependency to the app-level **build.gradle** file:
 
-```
+```java
 compile 'com.google.firebase:firebase-auth:9.6.1'
 compile 'com.google.firebase:firebase-database:9.6.1'
 ```
 
 Code for Firebase Authentication:
 
-```
+```java
 private FirebaseAuth firebaseAuth
 
 ...
@@ -82,7 +82,7 @@ protected void onCreate(Bundle savedInstanceState) {
     
 Code for Firebase Database:
 
-```
+```java
 private FirebaseAuth firebaseAuth;
 private DatabaseReference databaseReference;
 
