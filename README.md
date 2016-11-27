@@ -153,6 +153,7 @@ Code for Firebase Database:
 A Demo for Firebase Authentication on Android:
 
 ![](https://youtu.be/cibssj4-WMw)
+[![](http://img.youtube.com/vi/cibssj4-WMw/0.jpg)](http://www.youtube.com/watch?v=cibssj4-WMw)
 
 ### Google Api
 
