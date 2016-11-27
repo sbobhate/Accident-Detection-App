@@ -30,7 +30,7 @@ Add the following dependency to the app-level **build.gradle** file:
   compile 'com.google.firebase:firebase-database:9.6.1'
 ```
 
-Code for Firebase Authentication:
+**Code for Firebase Authentication:**
 
 ```java
   private FirebaseAuth firebaseAuth
@@ -80,7 +80,7 @@ Code for Firebase Authentication:
   }
 ```
     
-Code for Firebase Database:
+**Code for Firebase Database:**
 
 ```java
   private FirebaseAuth firebaseAuth;
@@ -150,9 +150,8 @@ Code for Firebase Database:
   }
 ```
 
-A Demo for Firebase Authentication on Android:
+**A Demo for Firebase Authentication on Android:**
 
-![](https://youtu.be/cibssj4-WMw)
 [![](http://img.youtube.com/vi/cibssj4-WMw/0.jpg)](http://www.youtube.com/watch?v=cibssj4-WMw)
 
 ### Google Api
