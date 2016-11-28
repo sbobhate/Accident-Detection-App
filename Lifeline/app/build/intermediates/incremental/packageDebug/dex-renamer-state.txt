@@ -1,7 +1,7 @@
-#Mon Nov 28 12:17:22 EST 2016
-base.0=/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c873ef958cfc9cfde37ce132e8c8b9c503ca93f1
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2e48b6ba1ad3dc4c4d99f3c568e6e208683f12aa/classes.dex
-base.1=/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2e48b6ba1ad3dc4c4d99f3c568e6e208683f12aa
-file.0=/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c873ef958cfc9cfde37ce132e8c8b9c503ca93f1/classes.dex
+#Mon Nov 28 12:36:54 EST 2016
+base.0=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93b6817231f9b272a619b045dd5e88425cab4448
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a8232c54bc8d391ecb435e577862dfb1371893e4/classes.dex
+base.1=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a8232c54bc8d391ecb435e577862dfb1371893e4
+file.0=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93b6817231f9b272a619b045dd5e88425cab4448/classes.dex
