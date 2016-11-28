@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +26,7 @@ public class Add_EmergencyActivity extends Activity {
     Toast toast;
     TextView toast_text;
     Typeface toast_font;
-    LayoutInflater inflater;String phoneNos;
+    LayoutInflater inflater;
     View layout;
     int flag=1;
     DBEmergency db;
@@ -48,6 +49,7 @@ public class Add_EmergencyActivity extends Activity {
         toast = new Toast(this.getApplicationContext());
         editText1 = (EditText)findViewById(R.id.add_name);
         editText10=(EditText)findViewById(R.id.add_phone);
+        editText10.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
         btn1=(TextView)findViewById(R.id.text_add);
         db=new DBEmergency(this);
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");

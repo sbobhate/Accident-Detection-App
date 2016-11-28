@@ -12,9 +12,6 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class SensorService extends Service implements SensorEventListener {
 

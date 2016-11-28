@@ -22,7 +22,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,8 +43,6 @@ public class MyEmerContActivity extends ActionBarActivity
     private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    ImageView imageView;
-    String phoneNo="";
     String email="";
     ExpandableListAdapter listAdapter;
     ExpandableListView mDrawerexpList;
@@ -53,8 +50,11 @@ public class MyEmerContActivity extends ActionBarActivity
     HashMap<String, List<String>> listDataChild;
     int[] login_icons=new int[]{
             R.drawable.carpool_32,
-            R.drawable.policy,
             R.drawable.myaccount,
+            R.drawable.policy1,
+            R.drawable.logout,
+
+
 
 
     };
@@ -126,14 +126,28 @@ public class MyEmerContActivity extends ActionBarActivity
             public boolean onGroupClick(ExpandableListView parent, View v,
                                         int groupPosition, long id) {
                 if (groupPosition == 0) {
-                    mDrawerLayout.closeDrawer(mDrawerexpList);
-                }
-                if (groupPosition == 2) {
+                    startActivity(new Intent(MyEmerContActivity.this, DashboardActivity.class));
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 1) {
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
+                if (groupPosition == 2) {
+                    mDrawerLayout.closeDrawer(mDrawerexpList);
+                }
+                if (groupPosition==3)
+                {
+                    try {
+                        firebaseAuth.signOut();
+                        finish();
+                        startActivity(new Intent(MyEmerContActivity.this, LoginScreenActivity.class));
+                    } catch (Exception e) {
+                        toast.setText("Unsuccessful");
+                        toast.show();
+                        e.printStackTrace();
+                    }
+                }
+
 
                 return false;
 
@@ -219,9 +233,11 @@ public class MyEmerContActivity extends ActionBarActivity
         //listDataChild = new HashMap<String, List<String>>();
 
         // Adding group data
-        listDataHeader.add("Driving Info");
+        listDataHeader.add("Start Driving");
+        listDataHeader.add("Emergency Contacts");
         listDataHeader.add("Policy Info");
-        listDataHeader.add("My Account");
+        //listDataHeader.add("My Account");
+        listDataHeader.add("Log Out");
 
 
 

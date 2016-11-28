@@ -1,0 +1,387 @@
+[
+    {
+        "outputFile": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 120,
+                    "endOffset": 221
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 340,
+                        "endColumn": 120,
+                        "endOffset": 456
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 226,
+                    "endColumn": 210,
+                    "endOffset": 432
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 461,
+                        "endColumn": 210,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 437,
+                    "endColumn": 140,
+                    "endOffset": 573
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 672,
+                        "endColumn": 140,
+                        "endOffset": 808
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 578,
+                    "endColumn": 122,
+                    "endOffset": 696
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 813,
+                        "endColumn": 122,
+                        "endOffset": 931
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 701,
+                    "endColumn": 218,
+                    "endOffset": 915
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 936,
+                        "endColumn": 218,
+                        "endOffset": 1150
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 920,
+                    "endColumn": 236,
+                    "endOffset": 1152
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1155,
+                        "endColumn": 236,
+                        "endOffset": 1387
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1157,
+                    "endColumn": 126,
+                    "endOffset": 1279
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1392,
+                        "endColumn": 126,
+                        "endOffset": 1514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1284,
+                    "endColumn": 134,
+                    "endOffset": 1414
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1519,
+                        "endColumn": 134,
+                        "endOffset": 1649
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1419,
+                    "endColumn": 269,
+                    "endOffset": 1684
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 269,
+                        "endOffset": 608
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1689,
+                    "endColumn": 253,
+                    "endOffset": 1938
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1654,
+                        "endColumn": 253,
+                        "endOffset": 1903
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1943,
+                    "endColumn": 123,
+                    "endOffset": 2062
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1908,
+                        "endColumn": 123,
+                        "endOffset": 2027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 2067,
+                    "endColumn": 117,
+                    "endOffset": 2180
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2032,
+                        "endColumn": 117,
+                        "endOffset": 2145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 2185,
+                    "endColumn": 204,
+                    "endOffset": 2385
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2150,
+                        "endColumn": 204,
+                        "endOffset": 2350
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 2390,
+                    "endColumn": 137,
+                    "endOffset": 2523
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2355,
+                        "endColumn": 137,
+                        "endOffset": 2488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 2528,
+                    "endColumn": 207,
+                    "endOffset": 2731
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2493,
+                        "endColumn": 207,
+                        "endOffset": 2696
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 2736,
+                    "endColumn": 143,
+                    "endOffset": 2875
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2701,
+                        "endColumn": 143,
+                        "endOffset": 2840
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2880,
+                    "endColumn": 190,
+                    "endOffset": 3066
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2845,
+                        "endColumn": 190,
+                        "endOffset": 3031
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 3071,
+                    "endColumn": 93,
+                    "endOffset": 3160
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 3036,
+                        "endColumn": 93,
+                        "endOffset": 3125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 3165,
+                    "endColumn": 98,
+                    "endOffset": 3259
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3130,
+                        "endColumn": 98,
+                        "endOffset": 3224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 3264,
+                    "endColumn": 120,
+                    "endOffset": 3380
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-ml/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3229,
+                        "endColumn": 120,
+                        "endOffset": 3345
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -92,7 +92,7 @@ public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 int position = getPosition() + 1;
-                                db.updatecontact("cont" + position, "NULL", "skalra@bu.edu");
+                                db.updatecontact("cont" + position, "NULL", email);
                                 removeAt(getPosition());
                             }
                         }).setNegativeButton("No", null).show();

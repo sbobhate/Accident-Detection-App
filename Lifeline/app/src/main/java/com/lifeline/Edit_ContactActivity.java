@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Edit_ContactActivity extends Activity{
     EditText editText1,editText2;
@@ -24,12 +28,20 @@ public class Edit_ContactActivity extends Activity{
     LayoutInflater inflater;
     View layout;
     DBEmergency db;
+    private FirebaseAuth firebaseAuth;
+    String email="";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contactedit_activity);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        final FirebaseUser user = firebaseAuth.getCurrentUser();
+        email=user.getEmail();
+
         Bundle b=getIntent().getExtras();
         name=b.getString("Name");
         phone=b.getString("Phone");
@@ -42,6 +54,7 @@ public class Edit_ContactActivity extends Activity{
         toast = new Toast(this.getApplicationContext());
         editText1 = (EditText)findViewById(R.id.edit_name);
         editText2 = (EditText)findViewById(R.id.edit_phone);
+        editText2.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
         btn1=(TextView)findViewById(R.id.text_edit);
         db=new DBEmergency(this);
 
@@ -83,7 +96,7 @@ public class Edit_ContactActivity extends Activity{
                 }
                 else{
                     String s="'Name="+editText1.getText().toString()+" Phone="+editText2.getText().toString()+"'";
-                    String text=db.updatecontact("cont" + cont, s,"skalra@bu.edu");
+                    String text=db.updatecontact("cont" + cont, s,email);
                     toast_text.setText(text);
                     toast.show();
                     Intent intent=new Intent(Edit_ContactActivity.this,MyEmerContActivity.class);
