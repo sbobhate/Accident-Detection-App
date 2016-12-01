@@ -8,9 +8,12 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Binder;
+import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.util.Log;
+import android.widget.Toast;
 
 
 public class SensorService extends Service implements SensorEventListener {
@@ -25,7 +28,12 @@ public class SensorService extends Service implements SensorEventListener {
     private Sensor accelerometer;
     private SensorManager mSensorManager;
 
-    double accelerationX, accelerationY, accelerationZ;
+    private double accelerationX, accelerationY, accelerationZ;
+
+    private int threshold = 20;
+    private ShakeDetector mShakeDetector;
+    private CountDownTimer timer;
+    private MediaPlayer mediaPlayeralarm;
 
     // Notification Manager
     private NotificationManager mNotificationManager;
@@ -53,9 +61,36 @@ public class SensorService extends Service implements SensorEventListener {
     public void onCreate() {
         super.onCreate();
 
+        mediaPlayeralarm = MediaPlayer.create(this, R.raw.rising_swoops);
+        timer = new CountDownTimer(10000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                mediaPlayeralarm.start();
+            }
+
+            public void onFinish() {
+                mediaPlayeralarm.stop();
+            }
+        };
+
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mSensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+
+        /*
+         * The following shake detector code does not work
+         * Instead I have added code in the onSensorChanged method below to trigger the alarm
+         */
+        /*
+        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake() {
+                // Do stuff! This is where we call sendSMS?
+                Toast.makeText(SensorService.this, "Shake Detected", Toast.LENGTH_SHORT).show();
+                timer.start();
+            }
+        });
+        */
 
         mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         showNotification();
@@ -78,6 +113,9 @@ public class SensorService extends Service implements SensorEventListener {
         accelerationZ = (Math.round(sensorEvent.values[2]*1000)/1000.0);
 
         /*** Detect Accident ***/
+        if (accelerationX > threshold || accelerationY > threshold || accelerationZ > threshold) {
+            timer.start();  // Sound the alarm
+        }
     }
 
     @Override

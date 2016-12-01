@@ -1,300 +1,300 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:2:1-68:12
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:2:1-68:12
 	package
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:3:5-27
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:3:5-27
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:20:5-66
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:7:5-66:19
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-auth:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:4:5-19
-MERGED from [com.google.firebase:firebase-auth-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:4:5-7:19
-MERGED from [com.android.support:cardview-v7:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-core:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:28:5-50:19
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:7:5-66:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\AndroidManifest.xml:4:5-19
+MERGED from [com.google.firebase:firebase-auth-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:4:5-7:19
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.6.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:28:5-50:19
 	android:label
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:10:9-41
 	android:supportsRtl
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:11:9-35
 	android:allowBackup
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:9:9-43
 	android:theme
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:12:9-52
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:12:9-52
 activity#com.lifeline.MainActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:13:9-50
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:13:9-50
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:13:19-47
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:13:19-47
 activity#com.lifeline.LoginScreenActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:14:19-54
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:14:19-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.lifeline.DashboardActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:21:9-55
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:21:9-55
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:21:19-52
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:21:19-52
 activity#com.lifeline.PersonalInfoActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:22:9-58
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:22:9-58
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:22:19-55
 activity#com.lifeline.SignUpActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:23:9-52
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:23:9-52
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:23:19-49
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:23:19-49
 activity#com.lifeline.MyEmerContActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:24:9-33:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:24:9-33:20
 	android:label
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:26:13-45
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:26:13-45
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:25:13-47
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:25:13-47
 intent-filter#android.intent.action.emergency_act+android.intent.category.ALTERNATIVE
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.emergency_act
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:29:17-78
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:29:17-78
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:29:25-75
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:29:25-75
 category#android.intent.category.ALTERNATIVE
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:31:17-80
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:31:17-80
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:31:27-77
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:31:27-77
 activity#com.lifeline.Add_EmergencyActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:34:9-42:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:34:9-42:20
 	android:label
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:36:13-41
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:35:13-50
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:35:13-50
 intent-filter#android.intent.action.addemergency_activity+android.intent.category.ALTERNATIVE
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:37:13-41:29
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.addemergency_activity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:38:17-86
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:38:17-86
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:38:25-83
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:38:25-83
 activity#com.lifeline.Edit_ContactActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:43:9-51:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:43:9-51:20
 	android:label
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:45:13-42
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:45:13-42
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:44:13-49
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:44:13-49
 intent-filter#android.intent.action.editcontact_activity+android.intent.category.ALTERNATIVE
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:46:13-50:29
 action#android.intent.action.editcontact_activity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:47:17-85
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:47:17-85
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:47:25-82
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:47:25-82
 activity#com.lifeline.TrackingActivity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:52:9-60:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:52:9-60:20
 	android:label
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:54:13-38
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:54:13-38
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:53:13-45
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:53:13-45
 intent-filter#android.intent.action.tracking_activity+android.intent.category.ALTERNATIVE
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:55:13-59:29
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:55:13-59:29
 action#android.intent.action.tracking_activity
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:56:17-82
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:56:17-82
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:56:25-79
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:56:25-79
 service#com.lifeline.SensorService
-ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:62:9-64:40
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:64:13-37
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml:63:13-42
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:63:13-42
 uses-sdk
-INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-vector-drawable:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-auth-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-auth-module:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/AndroidManifest.xml:3:5-42
-MERGED from [com.android.support:recyclerview-v7:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.0.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-core:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-core/9.6.1/AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:17:5-42
+INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-auth-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-auth-module:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.1\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\AndroidManifest.xml:3:5-42
+MERGED from [com.android.support:recyclerview-v7:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-core:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-core\9.6.1\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:17:5-42
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.0.0] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\AndroidManifest.xml:20:20-65
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:9-175
+ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:6:9-175
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:125-149
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:6:125-149
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:150-173
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:6:150-173
 	android:name
-		ADDED from [com.google.firebase:firebase-common:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/AndroidManifest.xml:6:79-124
+		ADDED from [com.google.firebase:firebase-common:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\AndroidManifest.xml:6:79-124
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:19:5-78
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:21:22-76
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:21:5-67
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:22:22-65
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:22:22-65
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\AndroidManifest.xml:32:16-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.6.1] /Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:9.6.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\AndroidManifest.xml:46:25-77

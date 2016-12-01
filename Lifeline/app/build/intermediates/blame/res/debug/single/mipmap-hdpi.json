@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/shantanubobhate/Downloads/Lifeline/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
-        "source": "/Users/shantanubobhate/Downloads/Lifeline/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
 ]

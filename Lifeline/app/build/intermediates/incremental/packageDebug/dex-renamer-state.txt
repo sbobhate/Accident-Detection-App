@@ -1,7 +1,7 @@
-#Mon Nov 28 12:36:54 EST 2016
-base.0=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93b6817231f9b272a619b045dd5e88425cab4448
+#Thu Dec 01 10:46:30 EST 2016
+base.0=C\:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ef06fadd2a4a67aff980f00d9481e6a04044129f
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a8232c54bc8d391ecb435e577862dfb1371893e4/classes.dex
-base.1=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a8232c54bc8d391ecb435e577862dfb1371893e4
-file.0=/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93b6817231f9b272a619b045dd5e88425cab4448/classes.dex
+file.1=C\:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_823ee9662f098f10d92b37c0cd1a8890cc4526cd\\classes.dex
+base.1=C\:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_823ee9662f098f10d92b37c0cd1a8890cc4526cd
+file.0=C\:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ef06fadd2a4a67aff980f00d9481e6a04044129f\\classes.dex
