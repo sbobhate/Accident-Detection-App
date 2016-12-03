@@ -56,12 +56,13 @@ public class SendSMSActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        mGPSHandler = new GPSHandler(this);
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         final FirebaseUser user = firebaseAuth.getCurrentUser();
         email=user.getEmail();
-
-        mGPSHandler = new GPSHandler(this);
+        
         location = mGPSHandler.getCurrentAddress();
 
         message = "Alert! It appears  that the USER may have been in a car accident. USER has chosen you as their emergency contact. USER's current location is " + location + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";

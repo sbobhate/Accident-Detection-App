@@ -1,16 +1,14 @@
 package com.lifeline;
 
-import android.*;
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -27,16 +25,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginScreenActivity extends AppCompatActivity {
 
-    private static final String KEY = "com.lifeline.secret";
-    private static final String STATE = "com.lifeline.state";
-
-    private static final int MY_PERMISSION_REQUEST_INTERNET = 1;
-    private static final int MY_PERMISSION_REQUEST_READ_PHONE_STATE = 2;
-    private static final int MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION = 3;
-    private static final int MY_PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 4;
-    private static final int MY_PERMISSION_REQUEST_SEND_SMS = 5;
+    private static final int MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS = 1;
 
     private EditText editTextEmail, editTextPassword;
     private Button btnLogin;
@@ -54,56 +48,15 @@ public class LoginScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
-        // Check for permissions and request if not enabled
-        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                android.Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED) {
-            // Request permission
-            ActivityCompat.requestPermissions(this, new String[]
-                    {
-                            android.Manifest.permission.INTERNET
-                    }, MY_PERMISSION_REQUEST_INTERNET);
+        final List<String> permissionsList = new ArrayList<>();
+        addPermission(permissionsList, Manifest.permission.READ_PHONE_STATE);
+        addPermission(permissionsList, Manifest.permission.ACCESS_COARSE_LOCATION);
+        addPermission(permissionsList, Manifest.permission.SEND_SMS);
+
+        if (permissionsList.size() != 0) {
+            requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
+                    MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS);
         }
-
-        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-            // Request permission
-            ActivityCompat.requestPermissions(this, new String[]
-                    {
-                            android.Manifest.permission.READ_PHONE_STATE
-                    }, MY_PERMISSION_REQUEST_READ_PHONE_STATE);
-        }
-
-        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Request permission
-            ActivityCompat.requestPermissions(this, new String[]
-                    {
-                            android.Manifest.permission.ACCESS_COARSE_LOCATION
-                    }, MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION);
-        }
-
-        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Request permission
-            ActivityCompat.requestPermissions(this, new String[]
-                    {
-                            android.Manifest.permission.ACCESS_FINE_LOCATION
-                    }, MY_PERMISSION_REQUEST_ACCESS_FINE_LOCATION);
-        }
-
-        if (ContextCompat.checkSelfPermission(getApplicationContext(),
-                android.Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
-            // Request permission
-            ActivityCompat.requestPermissions(this, new String[]
-                    {
-                            android.Manifest.permission.SEND_SMS
-                    }, MY_PERMISSION_REQUEST_SEND_SMS);
-        }
-
-        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
-        editor.putString(STATE, "login");
-        editor.commit();
-
 
         //Custom Toast
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
@@ -138,10 +91,14 @@ public class LoginScreenActivity extends AppCompatActivity {
 
         if (firebaseAuth.getCurrentUser() != null) {
             // Start Dashboard Activity
-//            toast_text.setText("Already Logged In!");
-//            toast.show();
             finish();
             startActivity(new Intent(this, com.lifeline.DashboardActivity.class));
+        }
+    }
+
+    private void addPermission(List<String> permissionsList, String permission) {
+        if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
+            permissionsList.add(permission);
         }
     }
 
@@ -173,7 +130,7 @@ public class LoginScreenActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                         if (task.isSuccessful()) {
                             // Start Dashboard Activity
-                            // toast_text.setText("Logged In!");
+                            toast_text.setText("Logged In!");
                             toast.show();
                             finish();
                             startActivity(new Intent(getApplicationContext(), DashboardActivity.class));
@@ -182,7 +139,6 @@ public class LoginScreenActivity extends AppCompatActivity {
                         {
                             toast_text.setText("Incorrect Credentials.");
                             toast.show();
-                            //Toast.makeText(LoginScreenActivity.this, "Incorrect Credentials.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -192,5 +148,32 @@ public class LoginScreenActivity extends AppCompatActivity {
     {
         finish();
         startActivity(new Intent(this,PersonalInfoActivity.class));
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay!
+                    Toast.makeText(this, "Permissions Given", Toast.LENGTH_SHORT).show();
+                } else {
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setMessage("This application needs permissions!\n" +
+                            "Go to Applications > Application Manager\n" +
+                            "to give permission.")
+                            .setTitle("Will Crash")
+                            .setNeutralButton("OK", null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
+                return;
+            }
+        }
     }
 }

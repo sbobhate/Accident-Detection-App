@@ -105,16 +105,19 @@ public class DashboardActivity extends AppCompatActivity {
             public boolean onGroupClick(ExpandableListView parent, View v,
                                         int groupPosition, long id) {
                 if (groupPosition == 0) {
-                    Intent intent = new Intent(DashboardActivity.this, TrackingActivity.class);
-                    startActivity(intent);
+                    // Already in this Activity
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 1) {
+                    finish();
                     Intent intent=new Intent(DashboardActivity.this, MyEmerContActivity.class);
                     startActivity(intent);
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 2) {
+                    finish();
+                    Intent intent=new Intent(DashboardActivity.this, MyAccount.class);
+                    startActivity(intent);
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 3){

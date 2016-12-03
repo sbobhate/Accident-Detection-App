@@ -121,13 +121,17 @@ public class MyEmerContActivity extends ActionBarActivity
             public boolean onGroupClick(ExpandableListView parent, View v,
                                         int groupPosition, long id) {
                 if (groupPosition == 0) {
+                    finish();
                     startActivity(new Intent(MyEmerContActivity.this, DashboardActivity.class));
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 1) {
+                    // Already in this Activity
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 2) {
+                    finish();
+                    startActivity(new Intent(MyEmerContActivity.this, MyAccount.class));
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition==3)

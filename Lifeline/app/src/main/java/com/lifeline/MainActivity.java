@@ -17,11 +17,6 @@ public class MainActivity extends AppCompatActivity {
     private String state;
     private static final String KEY = "com.lifeline.secret";
     private static final String STATE = "com.lifeline.state";
-    private static final int MY_PERMISSION_REQUEST_INTERNET = 1;
-    private static final int MY_PERMISSION_REQUEST_READ_PHONE_STATE = 2;
-    private static final int MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION = 3;
-    private static final int MY_PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 4;
-    private static final int MY_PERMISSION_REQUEST_SEND_SMS = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,33 +41,6 @@ public class MainActivity extends AppCompatActivity {
             editor.commit();
             finish();
             startActivity(new Intent(this, SignUpActivity.class));
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case MY_PERMISSION_REQUEST_INTERNET: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay!
-                    Toast.makeText(this, "Permission given", Toast.LENGTH_SHORT).show();
-                } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setMessage("This application needs the permission to save data\n" +
-                            "Go to Applications > Application Manager\n" +
-                            "to give permission.")
-                            .setTitle("Files will not be Saved")
-                            .setNeutralButton("OK", null);
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                }
-                return;
-            }
         }
     }
 }

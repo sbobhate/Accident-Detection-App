@@ -30,7 +30,7 @@ public class SensorService extends Service implements SensorEventListener {
 
     private double accelerationX, accelerationY, accelerationZ;
 
-    private int threshold = 20;
+    private int threshold = 15;
     private ShakeDetector mShakeDetector;
     private CountDownTimer timer;
     private MediaPlayer mediaPlayeralarm;
@@ -114,7 +114,8 @@ public class SensorService extends Service implements SensorEventListener {
 
         /*** Detect Accident ***/
         if (accelerationX > threshold || accelerationY > threshold || accelerationZ > threshold) {
-            timer.start();  // Sound the alarm
+            //timer.start();  // Sound the alarm
+            startActivity(new Intent(getApplicationContext(), SendSMSActivity.class));
         }
     }
 

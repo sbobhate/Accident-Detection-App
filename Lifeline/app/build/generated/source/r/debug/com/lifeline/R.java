@@ -2272,7 +2272,7 @@ containing a value of this type.
         public static final int action_settings=0x7f0c00bf;
         public static final int action_team=0x7f0c00c2;
         public static final int action_text=0x7f0c00aa;
-        public static final int actions=0x7f0c00b8;
+        public static final int actions=0x7f0c00b7;
         public static final int activity_chooser_view_content=0x7f0c0036;
         public static final int activity_dashboard=0x7f0c0064;
         public static final int activity_login_screen=0x7f0c0066;
@@ -2339,7 +2339,7 @@ containing a value of this type.
         public static final int home=0x7f0c0006;
         public static final int homeAsUp=0x7f0c0014;
         public static final int icon=0x7f0c003b;
-        public static final int icon_group=0x7f0c00b9;
+        public static final int icon_group=0x7f0c00b8;
         public static final int icon_only=0x7f0c002b;
         public static final int ifRoom=0x7f0c0028;
         public static final int image=0x7f0c0038;
@@ -2371,7 +2371,7 @@ containing a value of this type.
         public static final int never=0x7f0c0029;
         public static final int none=0x7f0c0015;
         public static final int normal=0x7f0c000d;
-        public static final int notification_background=0x7f0c00b7;
+        public static final int notification_background=0x7f0c00b6;
         public static final int notification_main_column=0x7f0c00b1;
         public static final int notification_main_column_container=0x7f0c00b0;
         public static final int parentPanel=0x7f0c003f;
@@ -2382,7 +2382,7 @@ containing a value of this type.
         public static final int recycler=0x7f0c00a4;
         public static final int relativeLayout=0x7f0c00a3;
         public static final int right=0x7f0c000f;
-        public static final int right_icon=0x7f0c00b6;
+        public static final int right_icon=0x7f0c00b9;
         public static final int right_side=0x7f0c00b2;
         public static final int screen=0x7f0c001c;
         public static final int scrollIndicatorDown=0x7f0c0047;

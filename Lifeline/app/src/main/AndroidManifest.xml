@@ -63,10 +63,16 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MyAccount"
+            android:label=" my account">
+            <action android:name="android.intent.action.my_account" />
+
+            <category android:name="android.intent.category.ALTERNATIVE" />
+        </activity>
+
         <service
             android:name=".SensorService"
             android:exported="false" />
-
     </application>
 
 </manifest>

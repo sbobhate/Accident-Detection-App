@@ -3,282 +3,282 @@
 
     <item
         is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_cfbe651264e6b7fc1b2356efe7b50057a2452aab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_0d48aed7e4387a41e57c3805fcb186ad17331b25/classes.dex" />
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_4f9c88a09902a77b9bc0f7b481ffd1c17a733cf5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_773c40c8770d7207feed0f5b53d10077aa78ee3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_3a2f93a78a265f80a5c6edeb5385dd0e7b60a5ee/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_7309c4e81386533d95f1d2d880ddf5c83e7db355/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_b68df4ddd66a1dddeadcd2d2a68758e1d1c07ab0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_1c1bddd9b6c3a146554459b052e32cfac7b8660a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_8919b37296b99c0b46d1c2d23f66381a7a9de770/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_52648bd25105e86d1b45314db0e3211a1b4f3918/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c284ee9479f1297fd6edb59b5b8a284957a1fc5d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_0aed2afade68c0ae5423577368d0a15c1d2fa325/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_789e14ea3cd704910b708a46319a93b389f7ba72/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_3246ef0f5c3432a520802266a8f6153b6d74e09c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_b5eebd25e1bf776c8694266325da6113f21c5d23/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1323d3429ac621f0f5b2f9ddc2b585ea78884322">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a8232c54bc8d391ecb435e577862dfb1371893e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ac8365c87591065db07f7bac8551504504832cd4">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_46bcff29016557cac9b38917bf9c49b5138af3f1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_9ad38837c08b38ddc77663dda4ccb7ddbf468aff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_cf65b7f288f53f67b7ec904956e2e0cab1bf22c2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="897819a17444079ca3a6a867c27041750aead869">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_93b6817231f9b272a619b045dd5e88425cab4448/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_8a46d145751d5bc05e5456899a61a691a4f94f11/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_556ba96721e3913e78980965d4d84c6d2643dc58/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_9ebba3a3dabf3dbff679d775f4bdb5b66fbb5c86/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_71d3646fc96932d98acfd0a9911f0b6e54819ccc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_db01c6f7bf7317e77e4e302c888ab07016886825/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_59bbab04fd91b452d43011da56b41a3cd1ede292/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_8bd33e63ced0bfd2b166c79f0c2f258c2998ac32/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_925d49c150bebcb7d7122ef41dda602f84490b1d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_9223691ffcb25f63ef7af5b97a58707a9c444877/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.1_0beb07018bd0b3f1b0f46c397cc179fe6cfd9b4d/classes.dex" />
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.6.1_0251a1ea4b53521f131f0593001379d0031d5d11\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e6e56ea2447a064a0f0bd5f3118dd553623d9d8f">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ef06fadd2a4a67aff980f00d9481e6a04044129f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_a2fcd067d7ef0141efd881970d842fa716c6c850\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_38bbc88510ba441ec471911974c17dab5824b15a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ef0ba89e0a8f748b0be3716d8e6680d142f7fe22">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_823ee9662f098f10d92b37c0cd1a8890cc4526cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_2166281a47043f08813aa1e203c8d0541f45e508\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_115d5ae874cddce09de7373fc36c672f6c184e58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.1_6d91ddf774fd839e1e0fadedc30116d64089d9fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_91fba29debb104db720998ea1d34b76e81210c90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_af52b6834f494363d753045a73dc70682e9eff57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_2d7d4b512cd6cb2259ba7a051128fe0789fc32c1/classes.dex" />
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_1fecd798f75f079ddf5339fe53785a6a7bc7fa75\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_bb9d3a52c85f64e9212ed3efd0323e35d62812cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_80ee992c66ea17952db47974a2957345875453a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.6.1_ea9fd136e9fef963f64289a2b08415626e815171\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.1_41736a74ed286a0adae10c107000c5bc1a656757\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_f06633efee6c3a50cb31050bbe4ccdcf0f4710a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_c5199f0fed7b6df77e84b7821706d1973a6ed2b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_4c49496baf42d45cc457f2204dd6f735dc7db10f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_217ec3a649867a75234da2c478f734abb68bc4e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_7c60b83c2214f0d417f35c6cb9a7271467e52be2/classes.dex" />
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.0.1_2d5aec9281d9569ea72558b8e62f28e020d62f59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.6.1_494d1ee9834ed04d42705e6044aae14271173f9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.6.1_9378efa15c66721c3739540d045613ddc606ab43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_25efb95aa629f0c330e5ddfd27d4c85e73c86ba6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_e5c7bcdb020c600807174210719694293a2c4cb5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.6.1_816051c81f01f778466707dfad4b68ad00b7c29a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_3c45e3579c84d509514f045f40700eb18fdae28f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_6305b8baeebc77ac86a5ff5540f80c37f789cabe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_b3cc6527ba183948ad797979baa830a93d9594b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_93c4ec9ed828c08e580a5b8d1c535985a99ff324\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_5a1ab6c5c05041677b08fb5d087e76dc9e3c1740\classes.dex" />
     </item>
 
 </items>

@@ -677,7 +677,7 @@ int id action_products 0x7f0c00c1
 int id action_settings 0x7f0c00bf
 int id action_team 0x7f0c00c2
 int id action_text 0x7f0c00aa
-int id actions 0x7f0c00b8
+int id actions 0x7f0c00b7
 int id activity_chooser_view_content 0x7f0c0036
 int id activity_dashboard 0x7f0c0064
 int id activity_login_screen 0x7f0c0066
@@ -744,7 +744,7 @@ int id fab_label 0x7f0c0001
 int id home 0x7f0c0006
 int id homeAsUp 0x7f0c0014
 int id icon 0x7f0c003b
-int id icon_group 0x7f0c00b9
+int id icon_group 0x7f0c00b8
 int id icon_only 0x7f0c002b
 int id ifRoom 0x7f0c0028
 int id image 0x7f0c0038
@@ -776,7 +776,7 @@ int id name1 0x7f0c0083
 int id never 0x7f0c0029
 int id none 0x7f0c0015
 int id normal 0x7f0c000d
-int id notification_background 0x7f0c00b7
+int id notification_background 0x7f0c00b6
 int id notification_main_column 0x7f0c00b1
 int id notification_main_column_container 0x7f0c00b0
 int id parentPanel 0x7f0c003f
@@ -787,7 +787,7 @@ int id radio 0x7f0c004d
 int id recycler 0x7f0c00a4
 int id relativeLayout 0x7f0c00a3
 int id right 0x7f0c000f
-int id right_icon 0x7f0c00b6
+int id right_icon 0x7f0c00b9
 int id right_side 0x7f0c00b2
 int id screen 0x7f0c001c
 int id scrollIndicatorDown 0x7f0c0047
