@@ -84,6 +84,7 @@
         android:layout_alignBottom="@+id/editTextFirstName"
         android:layout_alignLeft="@+id/view2"
         android:layout_alignStart="@+id/view2" />
+
     <ImageView
         android:layout_width="22sp"
         android:layout_height="22sp"
@@ -92,7 +93,6 @@
         android:layout_alignBottom="@+id/editTextLastName"
         android:layout_alignLeft="@+id/view3"
         android:layout_alignStart="@+id/view3" />
-
 
     <ImageView
         android:layout_width="22sp"
@@ -111,6 +111,7 @@
         android:layout_alignBottom="@+id/editTextPhoneNumber"
         android:layout_alignRight="@+id/imageView4"
         android:layout_alignEnd="@+id/imageView4" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -136,6 +137,7 @@
         android:layout_below="@+id/view3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -181,7 +183,6 @@
         android:layout_marginTop="15dp"
         android:layout_below="@+id/view2"
         android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>
 </ScrollView>

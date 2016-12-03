@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+        "outputFile": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 207
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 315
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 438
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 545
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 653
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 740
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 843
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 962
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1047
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1131
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1215
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1323
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1432
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1532
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1645
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1752
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1856
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1973
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2070
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 2178
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 2375
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 2506
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 2615
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 2828
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 3055
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 3187
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 3320
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 3566
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 3815
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 3939
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 4048
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 4246
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 4378
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 4589
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -657,7 +657,7 @@
                     "endOffset": 4727
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -676,7 +676,7 @@
                     "endOffset": 4909
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -695,7 +695,7 @@
                     "endOffset": 5009
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 5101
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 5214
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/res/values-sl/values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 5297
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -771,7 +771,791 @@
                     "endOffset": 5398
                 },
                 "from": {
-                    "file": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values-sl/values-sl.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2108,
+                        "endColumn": 100,
+                        "endOffset": 2204
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 106,
+                    "endOffset": 207
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 106,
+                        "endOffset": 157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 212,
+                    "endColumn": 107,
+                    "endOffset": 315
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 162,
+                        "endColumn": 107,
+                        "endOffset": 265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 320,
+                    "endColumn": 122,
+                    "endOffset": 438
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 270,
+                        "endColumn": 122,
+                        "endOffset": 388
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 443,
+                    "endColumn": 106,
+                    "endOffset": 545
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 393,
+                        "endColumn": 106,
+                        "endOffset": 495
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 550,
+                    "endColumn": 107,
+                    "endOffset": 653
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 500,
+                        "endColumn": 107,
+                        "endOffset": 603
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 658,
+                    "endColumn": 86,
+                    "endOffset": 740
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 608,
+                        "endColumn": 86,
+                        "endOffset": 690
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 745,
+                    "endColumn": 102,
+                    "endOffset": 843
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 695,
+                        "endColumn": 102,
+                        "endOffset": 793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 848,
+                    "endColumn": 118,
+                    "endOffset": 962
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 798,
+                        "endColumn": 118,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 967,
+                    "endColumn": 84,
+                    "endOffset": 1047
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endColumn": 84,
+                        "endOffset": 997
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1052,
+                    "endColumn": 83,
+                    "endOffset": 1131
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1002,
+                        "endColumn": 83,
+                        "endOffset": 1081
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1136,
+                    "endColumn": 83,
+                    "endOffset": 1215
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1086,
+                        "endColumn": 83,
+                        "endOffset": 1165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1220,
+                    "endColumn": 107,
+                    "endOffset": 1323
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1170,
+                        "endColumn": 107,
+                        "endOffset": 1273
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1328,
+                    "endColumn": 108,
+                    "endOffset": 1432
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1278,
+                        "endColumn": 108,
+                        "endOffset": 1382
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1437,
+                    "endColumn": 99,
+                    "endOffset": 1532
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1387,
+                        "endColumn": 99,
+                        "endOffset": 1482
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1537,
+                    "endColumn": 112,
+                    "endOffset": 1645
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1487,
+                        "endColumn": 112,
+                        "endOffset": 1595
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1650,
+                    "endColumn": 106,
+                    "endOffset": 1752
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1600,
+                        "endColumn": 106,
+                        "endOffset": 1702
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1757,
+                    "endColumn": 103,
+                    "endOffset": 1856
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1707,
+                        "endColumn": 103,
+                        "endOffset": 1806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1861,
+                    "endColumn": 116,
+                    "endOffset": 1973
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1811,
+                        "endColumn": 116,
+                        "endOffset": 1923
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1978,
+                    "endColumn": 96,
+                    "endOffset": 2070
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1928,
+                        "endColumn": 96,
+                        "endOffset": 2020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2075,
+                    "endColumn": 107,
+                    "endOffset": 2178
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 340,
+                        "endColumn": 107,
+                        "endOffset": 443
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2183,
+                    "endColumn": 196,
+                    "endOffset": 2375
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 448,
+                        "endColumn": 196,
+                        "endOffset": 640
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2380,
+                    "endColumn": 130,
+                    "endOffset": 2506
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 645,
+                        "endColumn": 130,
+                        "endOffset": 771
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2511,
+                    "endColumn": 108,
+                    "endOffset": 2615
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 776,
+                        "endColumn": 108,
+                        "endOffset": 880
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2620,
+                    "endColumn": 212,
+                    "endOffset": 2828
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 885,
+                        "endColumn": 212,
+                        "endOffset": 1093
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2833,
+                    "endColumn": 226,
+                    "endOffset": 3055
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1098,
+                        "endColumn": 226,
+                        "endOffset": 1320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 3060,
+                    "endColumn": 131,
+                    "endOffset": 3187
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1325,
+                        "endColumn": 131,
+                        "endOffset": 1452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 3192,
+                    "endColumn": 132,
+                    "endOffset": 3320
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1457,
+                        "endColumn": 132,
+                        "endOffset": 1585
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 3325,
+                    "endColumn": 245,
+                    "endOffset": 3566
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 343,
+                        "endColumn": 245,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 3571,
+                    "endColumn": 248,
+                    "endOffset": 3815
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1590,
+                        "endColumn": 248,
+                        "endOffset": 1834
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3820,
+                    "endColumn": 123,
+                    "endOffset": 3939
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1839,
+                        "endColumn": 123,
+                        "endOffset": 1958
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3944,
+                    "endColumn": 108,
+                    "endOffset": 4048
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1963,
+                        "endColumn": 108,
+                        "endOffset": 2067
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 4053,
+                    "endColumn": 197,
+                    "endOffset": 4246
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2072,
+                        "endColumn": 197,
+                        "endOffset": 2265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 4251,
+                    "endColumn": 131,
+                    "endOffset": 4378
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2270,
+                        "endColumn": 131,
+                        "endOffset": 2397
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 4383,
+                    "endColumn": 210,
+                    "endOffset": 4589
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2402,
+                        "endColumn": 210,
+                        "endOffset": 2608
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 4594,
+                    "endColumn": 137,
+                    "endOffset": 4727
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2613,
+                        "endColumn": 137,
+                        "endOffset": 2746
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4732,
+                    "endColumn": 181,
+                    "endOffset": 4909
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2751,
+                        "endColumn": 181,
+                        "endOffset": 2928
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4914,
+                    "endColumn": 99,
+                    "endOffset": 5009
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2933,
+                        "endColumn": 99,
+                        "endOffset": 3028
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 5014,
+                    "endColumn": 91,
+                    "endOffset": 5101
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3033,
+                        "endColumn": 91,
+                        "endOffset": 3120
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 5106,
+                    "endColumn": 112,
+                    "endOffset": 5214
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.6.1\\res\\values-sl\\values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3125,
+                        "endColumn": 112,
+                        "endOffset": 3233
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 5219,
+                    "endColumn": 82,
+                    "endOffset": 5297
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2025,
+                        "endColumn": 82,
+                        "endOffset": 2103
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 5302,
+                    "endColumn": 100,
+                    "endOffset": 5398
+                },
+                "from": {
+                    "file": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\values-sl\\values-sl.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
