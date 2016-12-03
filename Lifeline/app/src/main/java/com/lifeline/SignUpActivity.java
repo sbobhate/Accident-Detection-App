@@ -31,18 +31,20 @@ public class SignUpActivity extends AppCompatActivity {
 
     private static final String KEY = "com.lifeline.secret";
     private static final String STATE = "com.lifeline.state";
+
     private EditText editTextEmail, editTextPassword;
-    private Button btnRegister;
-    Toast toast;
-    TextView toast_text;
-    Typeface toast_font;
-    LayoutInflater inflater;
-    View layout;
+    private Button buttonRegister;
+    private Toast toast;
+    private TextView toast_text;
+    private Typeface toast_font;
+    private LayoutInflater inflater;
+    private View layout;
+    private TextView textViewTitle;
+
     private DatabaseReference databaseReference;
-    private TextView textViewSignin,textView1;
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
-    String firstname="",lastname="",phone="",policyno="";
+    private String firstName, lastName, phoneNumber, policyNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +55,11 @@ public class SignUpActivity extends AppCompatActivity {
         editor.putString(STATE, "signUp");
         editor.commit();
 
-        Bundle b=getIntent().getExtras();
-        firstname=b.getString("Fname");
-        lastname=b.getString("Lname");
-        phone=b.getString("Phone");
-        policyno=b.getString("policy");
+        Bundle mBundle = getIntent().getExtras();
+        firstName = mBundle.getString("firstName");
+        lastName = mBundle.getString("lastName");
+        phoneNumber = mBundle.getString("phoneNumber");
+        policyNumber = mBundle.getString("policyNumber");
 
         //Custom Toast
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
@@ -73,17 +75,15 @@ public class SignUpActivity extends AppCompatActivity {
         //Initialisation of all the components
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        btnRegister= (Button) findViewById(R.id.btnRegister);
-        //textViewSignin = (TextView)findViewById(R.id.textViewSignin);
-        textView1 = (TextView) findViewById(R.id.textView1);
+        buttonRegister = (Button) findViewById(R.id.btnRegister);
+        textViewTitle = (TextView) findViewById(R.id.textViewTitle);
 
         //Changing font of all layout components
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");
         editTextEmail.setTypeface(custom_font);
         editTextPassword.setTypeface(custom_font);
-        //textViewSignin.setTypeface(custom_font);
-        btnRegister.setTypeface(custom_font, Typeface.BOLD);
-        textView1.setTypeface(custom_font, Typeface.BOLD);
+        buttonRegister.setTypeface(custom_font, Typeface.BOLD);
+        textViewTitle.setTypeface(custom_font, Typeface.BOLD);
         progressDialog = new ProgressDialog(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -100,29 +100,31 @@ public class SignUpActivity extends AppCompatActivity {
         {
             toast_text.setText("Invalid Email,Try again");
             toast.show();
+            return;
         }
 
-        else if(password.length()<8)
+        if(password.length()<8)
         {
             toast_text.setText("Password must be of 8 characters");
             toast.show();
+            return;
         }
 
-        else if (TextUtils.isEmpty(email)) {
+        if (TextUtils.isEmpty(email)) {
             toast_text.setText("No Email Entered");
             toast.show();
             return;
         }
 
-        else if (TextUtils.isEmpty(password))
+        if (TextUtils.isEmpty(password))
         {
             toast_text.setText("No Password Entered");
             toast.show();
             return;
         }
 
-//        progressDialog.setMessage("Registering...");
-//        progressDialog.show();
+        progressDialog.setMessage("Registering...");
+        progressDialog.show();
 
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -132,7 +134,7 @@ public class SignUpActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Login with details
                             firebaseAuth.signInWithEmailAndPassword(email, password);
-                            UserInformation userInformation = new UserInformation(firstname, lastname, policyno, phone);
+                            UserInformation userInformation = new UserInformation(firstName, lastName, policyNumber, phoneNumber);
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             databaseReference.child(user.getUid()).setValue(userInformation);
                             progressDialog.dismiss();
@@ -141,15 +143,11 @@ public class SignUpActivity extends AppCompatActivity {
                             startActivity(new Intent(SignUpActivity.this, DashboardActivity.class));
                             finish();
 
-                        }
-                        else
-                        {
+                        } else {
                             toast_text.setText("Oops!! Try again later!");
                             toast.show();
                         }
                     }
                 });
     }
-
-
 }

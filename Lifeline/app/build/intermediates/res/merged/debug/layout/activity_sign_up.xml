@@ -16,22 +16,25 @@
     tools:context="com.lifeline.SignUpActivity">
 
     <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="35dp"
         android:text="Register"
         android:textColor="#bfdfdf"
-        android:id="@+id/textView1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textAlignment="center"/>
+
     <View
+        android:id="@+id/view1"
         android:layout_width="300sp"
         android:layout_height="1px"
         android:background="#495669"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="65sp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/view1" />
+        />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
@@ -42,6 +45,7 @@
         android:layout_alignStart="@+id/view1"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true" />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
@@ -85,6 +89,7 @@
         android:layout_below="@+id/view1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,18 +115,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:onClick="register"/>
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Already Registered? Click here to Sign In. "-->
-        <!--android:id="@+id/textViewSignin"-->
-        <!--android:textSize="17sp"-->
-        <!--android:textColor="#898A83"-->
-        <!--android:layout_below="@+id/btnRegister"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="68dp"-->
-        <!--android:onClick="goToSignIn"/>-->
 
 </RelativeLayout>
 </ScrollView>

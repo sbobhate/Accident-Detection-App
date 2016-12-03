@@ -1,6 +1,5 @@
 package com.lifeline;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +7,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.PhoneNumberFormattingTextWatcher;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,24 +24,20 @@ public class PersonalInfoActivity extends AppCompatActivity {
 
     private static final String KEY = "com.lifeline.secret";
     private static final String STATE = "com.lifeline.state";
-    private FirebaseAuth firebaseAuth;
-    private DatabaseReference databaseReference;
+
     private EditText editTextFirstName, editTextLastName, editTextPolicyNumber, editTextPhoneNumber;
     private Button btnPersonal;
-    Toast toast;
-    TextView toast_text;
-    Typeface toast_font;
-    LayoutInflater inflater;
-    View layout;
-    TextView textView1;
-    private ProgressDialog progressDialog;
-    String email="",pass="";
+    private Toast toast;
+    private TextView toast_text;
+    private Typeface toast_font;
+    private LayoutInflater inflater;
+    private View layout;
+    private TextView textViewTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
-
 
         SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
         editor.putString(STATE, "personalInfo");
@@ -63,8 +59,9 @@ public class PersonalInfoActivity extends AppCompatActivity {
         editTextPolicyNumber = (EditText) findViewById(R.id.editTextPolicyNumber);
         editTextPhoneNumber = (EditText) findViewById(R.id.editTextPhoneNumber);
         btnPersonal = (Button) findViewById(R.id.btnPersonal);
-        textView1 = (TextView) findViewById(R.id.textView1);
+        textViewTitle = (TextView) findViewById(R.id.textViewTitle);
         editTextPhoneNumber.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
+
         //Changing font of all layout components
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");
         editTextFirstName.setTypeface(custom_font);
@@ -72,48 +69,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
         editTextPhoneNumber.setTypeface(custom_font);
         editTextPolicyNumber.setTypeface(custom_font);
         btnPersonal.setTypeface(custom_font, Typeface.BOLD);
-        textView1.setTypeface(custom_font, Typeface.BOLD);
-
-        firebaseAuth = FirebaseAuth.getInstance();
-
-//        final FirebaseUser user = firebaseAuth.getCurrentUser();
-//
-//        if (user == null) {
-//            finish();
-//            startActivity(new Intent(this, LoginScreenActivity.class));
-//        }
-//
-//        databaseReference = FirebaseDatabase.getInstance().getReference();
-//
-//        progressDialog = new ProgressDialog(this);
-//
-//        progressDialog.setMessage("Fetching Data...");
-//        progressDialog.show();
-//
-//        databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                ArrayList<String> values = new ArrayList<String>(4);
-//                for (DataSnapshot child : dataSnapshot.getChildren()) {
-//                    values.add(child.getValue().toString());
-//                }
-//
-//                if (!values.isEmpty()) {
-//                    editTextFirstName.setText(values.get(0));
-//                    editTextLastName.setText(values.get(1));
-//                    editTextPhoneNumber.setText(values.get(2));
-//                    editTextPolicyNumber.setText(values.get(3));
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//                toast_text.setText("Could not retrieve data!! ");
-//                toast.show();
-//            }
-//        });
-
-        //progressDialog.dismiss();
+        textViewTitle.setTypeface(custom_font, Typeface.BOLD);
     }
 
     public void goToHome(View view)
@@ -123,16 +79,32 @@ public class PersonalInfoActivity extends AppCompatActivity {
         String policyNumber = editTextPolicyNumber.getText().toString().trim();
         String phoneNumber = editTextPhoneNumber.getText().toString().trim();
 
+        if (TextUtils.isEmpty(firstName)) {
+            Toast.makeText(this, "Please enter your first name", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if (TextUtils.isEmpty(lastName)) {
+            Toast.makeText(this, "Please enter your last name", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if (TextUtils.isEmpty(policyNumber)) {
+            Toast.makeText(this, "Please enter your policy number", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if (TextUtils.isEmpty(phoneNumber)) {
+            Toast.makeText(this, "Please enter your phone number", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
-            Intent intent=new Intent(getApplicationContext(),SignUpActivity.class);
-            Bundle b=new Bundle();
-            b.putString("Fname",firstName);
-            b.putString("Lname",lastName);
-            b.putString("policy",policyNumber);
-            b.putString("Phone",phoneNumber);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            intent.putExtras(b);
-            startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
+        Bundle mBundle = new Bundle();
+        mBundle.putString("firstName", firstName);
+        mBundle.putString("lastName", lastName);
+        mBundle.putString("policyNumber", policyNumber);
+        mBundle.putString("phoneNumber", phoneNumber);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtras(mBundle);
+        startActivity(intent);
 
     }
 }

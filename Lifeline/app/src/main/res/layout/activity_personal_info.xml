@@ -16,12 +16,12 @@
     tools:context="com.lifeline.PersonalInfoActivity">
 
     <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="55dp"
         android:text="Personal Information"
         android:textColor="#003366"
-        android:id="@+id/textView1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textAlignment="center"/>
 
@@ -33,6 +33,7 @@
         android:layout_marginTop="35sp"
         android:layout_centerHorizontal="true"
         android:id="@+id/view1" />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
@@ -45,6 +46,7 @@
         android:layout_alignStart="@+id/view3"
         android:layout_alignRight="@+id/view4"
         android:layout_alignEnd="@+id/view4" />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
@@ -82,6 +84,7 @@
         android:layout_alignBottom="@+id/editTextFirstName"
         android:layout_alignLeft="@+id/view2"
         android:layout_alignStart="@+id/view2" />
+
     <ImageView
         android:layout_width="22sp"
         android:layout_height="22sp"
@@ -90,7 +93,6 @@
         android:layout_alignBottom="@+id/editTextLastName"
         android:layout_alignLeft="@+id/view3"
         android:layout_alignStart="@+id/view3" />
-
 
     <ImageView
         android:layout_width="22sp"
@@ -109,6 +111,7 @@
         android:layout_alignBottom="@+id/editTextPhoneNumber"
         android:layout_alignRight="@+id/imageView4"
         android:layout_alignEnd="@+id/imageView4" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -134,6 +137,7 @@
         android:layout_below="@+id/view3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -179,7 +183,6 @@
         android:layout_marginTop="15dp"
         android:layout_below="@+id/view2"
         android:layout_centerHorizontal="true" />
-
 
 </RelativeLayout>
 </ScrollView>

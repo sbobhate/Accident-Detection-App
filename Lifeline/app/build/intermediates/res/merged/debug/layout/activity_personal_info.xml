@@ -16,12 +16,12 @@
     tools:context="com.lifeline.PersonalInfoActivity">
 
     <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="55dp"
         android:text="Personal Information"
         android:textColor="#003366"
-        android:id="@+id/textView1"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textAlignment="center"/>
 
@@ -33,6 +33,7 @@
         android:layout_marginTop="35sp"
         android:layout_centerHorizontal="true"
         android:id="@+id/view1" />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
@@ -45,6 +46,7 @@
         android:layout_alignStart="@+id/view3"
         android:layout_alignRight="@+id/view4"
         android:layout_alignEnd="@+id/view4" />
+
     <View
         android:layout_width="300sp"
         android:layout_height="1px"
