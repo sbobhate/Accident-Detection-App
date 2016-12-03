@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity  {
     private SensorService mLocalService;
     private boolean isBound = false;
 
-    private boolean hasPermission = false;
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE= 1;
 
     // Function to handle a new Service Connection
@@ -73,15 +72,6 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        if (savedInstanceState != null) {
-//            // Restore value of members from saved state
-//            isTracking = savedInstanceState.getBoolean("IsTracking");
-//            isBound = savedInstanceState.getBoolean("IsBound");
-//            hasPermission = savedInstanceState.getBoolean("HasPermission");
-//        } else {
-//            // Probably initialize members with default values for a new instance
-//        }
-
         // Initialize Views
         editTextFilename = (EditText) findViewById(R.id.editTextFilename);
         editTextDescription = (EditText) findViewById(R.id.editTextDescription);
@@ -95,8 +85,6 @@ public class MainActivity extends AppCompatActivity  {
                 {
                     Manifest.permission.WRITE_EXTERNAL_STORAGE
                 }, MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE);
-        } else {
-            hasPermission = true;
         }
     }
 
@@ -120,7 +108,6 @@ public class MainActivity extends AppCompatActivity  {
         // killed and restarted.
         outState.putBoolean("IsTracking", isTracking);
         outState.putBoolean("IsBound", isBound);
-        outState.putBoolean("HasPermission", hasPermission);
     }
 
     @Override
@@ -130,7 +117,6 @@ public class MainActivity extends AppCompatActivity  {
         // This bundle has also been passed to onCreate.
         isTracking = savedInstanceState.getBoolean("IsTracking");
         isBound = savedInstanceState.getBoolean("IsBound");
-        hasPermission = savedInstanceState.getBoolean("HasPermission");
     }
 
     @Override
@@ -143,7 +129,6 @@ public class MainActivity extends AppCompatActivity  {
 
                     // permission was granted, yay!
                     Toast.makeText(this, "Permission given", Toast.LENGTH_SHORT).show();
-                    hasPermission = true;
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
@@ -170,17 +155,15 @@ public class MainActivity extends AppCompatActivity  {
             doUnbindService();
             buttonTracking.setText("Start Tracking");
         } else {
-            if (hasPermission) {
-                String fileName = "";
-                fileName = editTextFilename.getText().toString() + ".csv";
-                if (fileName == "") {
-                    fileName = "data.csv";
-                }
-                String description = editTextDescription.getText().toString();
-                isTracking = true;
-                buttonTracking.setText("Stop Tracking");
-                doBindService(fileName, description);
+            String fileName = "";
+            fileName = editTextFilename.getText().toString() + ".csv";
+            if (fileName == "") {
+                fileName = "data.csv";
             }
+            String description = editTextDescription.getText().toString();
+            isTracking = true;
+            buttonTracking.setText("Stop Tracking");
+            doBindService(fileName, description);
         }
     }
 
@@ -202,6 +185,8 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     public void viewPlot(View view) {
+        Intent mIntent = new Intent(this, PlotActivity.class);
+        mIntent.putExtra("FILENAME", editTextFilename.getText().toString() + ".csv");
         startActivity(new Intent(this, PlotActivity.class));
     }
 }
