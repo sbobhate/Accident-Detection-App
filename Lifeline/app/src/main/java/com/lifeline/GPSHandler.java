@@ -30,6 +30,10 @@ public class GPSHandler {
 
     private List<Point> mPoints;
 
+    public String getCurrentAddress() {
+        return currentAddress;
+    }
+
     public GPSHandler(Context context) {
         mContext = context;
         mLocationManager = (LocationManager) context.getSystemService(mContext.LOCATION_SERVICE);

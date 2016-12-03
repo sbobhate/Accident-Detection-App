@@ -29,7 +29,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -47,17 +46,13 @@ public class MyEmerContActivity extends ActionBarActivity
     ExpandableListAdapter listAdapter;
     ExpandableListView mDrawerexpList;
     List<String> listDataHeader;
-    HashMap<String, List<String>> listDataChild;
     int[] login_icons=new int[]{
             R.drawable.carpool_32,
             R.drawable.myaccount,
             R.drawable.policy1,
             R.drawable.logout,
-
-
-
-
     };
+
     private Typeface custom_font;
     Toast toast;
     TextView toast_text;
@@ -170,23 +165,6 @@ public class MyEmerContActivity extends ActionBarActivity
             }
         });
 
-
-
-
-        //to show image in action bar
-//        getSupportActionBar().setDisplayOptions(getSupportActionBar().getDisplayOptions()
-//                | ActionBar.DISPLAY_SHOW_CUSTOM);
-//        getSupportActionBar().setDisplayShowTitleEnabled(false);
-//        //imageView = new ImageView(getSupportActionBar().getThemedContext());
-//        //imageView.setImageResource(R.drawable.img_i_4);
-//        ActionBar.LayoutParams layoutParams = new ActionBar.LayoutParams(
-//                810,
-//                180,Gravity.CENTER_HORIZONTAL);
-//        imageView.setLayoutParams(layoutParams);
-//        getSupportActionBar().setCustomView(imageView);
-
-
-
         // enable ActionBar app icon to behave as action to toggle nav drawer
         final android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         mDrawerToggle = new ActionBarDrawerToggle(
@@ -233,10 +211,9 @@ public class MyEmerContActivity extends ActionBarActivity
         //listDataChild = new HashMap<String, List<String>>();
 
         // Adding group data
-        listDataHeader.add("Start Driving");
+        listDataHeader.add("Dashboard");
         listDataHeader.add("Emergency Contacts");
-        listDataHeader.add("Policy Info");
-        //listDataHeader.add("My Account");
+        listDataHeader.add("My Account");
         listDataHeader.add("Log Out");
 
 

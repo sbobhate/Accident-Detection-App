@@ -178,19 +178,6 @@ public class DashboardActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToContacts(View view) {
-        Intent intent=new Intent(this, MyEmerContActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToPolicyInfo(View view) {
-
-    }
-
-    public void goToDrivingInfo(View view) {
-
-    }
-
     public void logout(View view)
     {
         try {
@@ -208,9 +195,9 @@ public class DashboardActivity extends AppCompatActivity {
         //listDataChild = new HashMap<String, List<String>>();
 
         // Adding group data
-        listDataHeader.add("Start Driving");
+        listDataHeader.add("Dashboard");
         listDataHeader.add("Emergency Contacts");
-        listDataHeader.add("Policy Info");
+        listDataHeader.add("My Account");
         listDataHeader.add("Log Out");
 
 

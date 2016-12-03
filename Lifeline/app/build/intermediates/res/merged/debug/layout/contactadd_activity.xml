@@ -6,7 +6,7 @@
 
     <View
         android:layout_width="300sp"
-        android:layout_height="1px "
+        android:layout_height="1px"
         android:background="#003366"
         android:id="@+id/view1"
         android:layout_marginTop="100sp"
@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true" />
     <View
         android:layout_width="300sp"
-        android:layout_height="1px "
+        android:layout_height="1px"
         android:background="#003366"
         android:id="@+id/view1.0"
         android:layout_below="@+id/add_name"
@@ -24,7 +24,7 @@
         />
     <View
         android:layout_width="300sp"
-        android:layout_height="1px "
+        android:layout_height="1px"
         android:background="#003366"
         android:id="@+id/view1.1"
         android:layout_below="@+id/add_phone"

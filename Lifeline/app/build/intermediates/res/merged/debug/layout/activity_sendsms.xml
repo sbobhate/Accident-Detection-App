@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sendsms"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/timer"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ph1"
+            android:layout_alignBaseline="@+id/name1"
+            android:layout_alignBottom="@+id/name1"
+            android:layout_alignLeft="@+id/textnumber"
+            android:layout_alignStart="@+id/textnumber" />
+
+        <TextView
+            android:id="@+id/textcontactmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Emergency Contact (Main)"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textcontactmain"
+            android:layout_marginTop="10dp"
+            android:text="n1" />
+
+
+
+        <TextView
+            android:id="@+id/textnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textcontactmain"
+            android:layout_toRightOf="@+id/textcontactmain"
+            android:layout_toEndOf="@+id/textcontactmain"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp"
+            android:layout_marginTop="22dp"
+            android:text="Contact Phone Number"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/emergencymessagedescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/phone1"
+            android:layout_marginTop="22dp"
+            android:text="Message to send:"
+            android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        <TextView
+            android:id="@+id/emergencymessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/emergencymessagedescription"
+            android:layout_marginTop="10dp"
+            android:text="string/emergencymessage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/emergencymessage">
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Cancel Text"
+                android:visibility="visible"
+                android:layout_marginLeft="40dp"
+                android:layout_marginStart="40dp" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Send Text"
+                android:visibility="visible"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

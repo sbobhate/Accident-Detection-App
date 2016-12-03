@@ -1,12 +1,16 @@
 package com.lifeline;
 
+import android.*;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -27,6 +31,13 @@ public class LoginScreenActivity extends AppCompatActivity {
 
     private static final String KEY = "com.lifeline.secret";
     private static final String STATE = "com.lifeline.state";
+
+    private static final int MY_PERMISSION_REQUEST_INTERNET = 1;
+    private static final int MY_PERMISSION_REQUEST_READ_PHONE_STATE = 2;
+    private static final int MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION = 3;
+    private static final int MY_PERMISSION_REQUEST_ACCESS_FINE_LOCATION = 4;
+    private static final int MY_PERMISSION_REQUEST_SEND_SMS = 5;
+
     private EditText editTextEmail, editTextPassword;
     private Button btnLogin;
     Toast toast;
@@ -42,6 +53,52 @@ public class LoginScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
+
+        // Check for permissions and request if not enabled
+        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED) {
+            // Request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            android.Manifest.permission.INTERNET
+                    }, MY_PERMISSION_REQUEST_INTERNET);
+        }
+
+        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+            // Request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            android.Manifest.permission.READ_PHONE_STATE
+                    }, MY_PERMISSION_REQUEST_READ_PHONE_STATE);
+        }
+
+        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // Request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            android.Manifest.permission.ACCESS_COARSE_LOCATION
+                    }, MY_PERMISSION_REQUEST_ACCESS_COARSE_LOCATION);
+        }
+
+        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // Request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            android.Manifest.permission.ACCESS_FINE_LOCATION
+                    }, MY_PERMISSION_REQUEST_ACCESS_FINE_LOCATION);
+        }
+
+        if (ContextCompat.checkSelfPermission(getApplicationContext(),
+                android.Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
+            // Request permission
+            ActivityCompat.requestPermissions(this, new String[]
+                    {
+                            android.Manifest.permission.SEND_SMS
+                    }, MY_PERMISSION_REQUEST_SEND_SMS);
+        }
 
         SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
         editor.putString(STATE, "login");
@@ -106,17 +163,17 @@ public class LoginScreenActivity extends AppCompatActivity {
             return;
         }
 
-//        progressDialog.setMessage("Logging In...");
-//        progressDialog.show();
+        progressDialog.setMessage("Logging In...");
+        progressDialog.show();
 
         firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        //progressDialog.dismiss();
+                        progressDialog.dismiss();
                         if (task.isSuccessful()) {
                             // Start Dashboard Activity
-                            toast_text.setText("Logged In!");
+                            // toast_text.setText("Logged In!");
                             toast.show();
                             finish();
                             startActivity(new Intent(getApplicationContext(), DashboardActivity.class));

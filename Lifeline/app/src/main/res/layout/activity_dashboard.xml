@@ -36,36 +36,6 @@
             android:background="#003366"
             android:onClick="startTracking"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Emergency Contacts"
-            android:textColor="#bfdfdf"
-            android:textSize="15sp"
-            android:background="#003366"
-            android:onClick="goToContacts"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="See Policy Info"
-            android:textColor="#bfdfdf"
-            android:textSize="15sp"
-            android:background="#003366"
-            android:onClick="goToPolicyInfo"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:textColor="#bfdfdf"
-            android:textSize="15sp"
-            android:background="#003366"
-            android:text="View Driving Info"
-            android:onClick="goToDrivingInfo"/>
-
         <!--<TextView-->
             <!--android:id="@+id/textViewLogout"-->
             <!--android:layout_width="match_parent"-->

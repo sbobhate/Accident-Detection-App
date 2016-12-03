@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\raw\\rising_swoops.mp3",
-        "source": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\raw\\rising_swoops.mp3"
-    },
-    {
         "merged": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/build/intermediates/res/merged/debug/raw/rising_swoops.mp3",
         "source": "/Users/shantanubobhate/Documents/EC601Project/Lifeline/app/src/main/res/raw/rising_swoops.mp3"
     }
