@@ -1,15 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_big_media.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",

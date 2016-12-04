@@ -24,8 +24,13 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class SignUpActivity extends AppCompatActivity {
 
@@ -87,6 +92,11 @@ public class SignUpActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        final FirebaseUser user = firebaseAuth.getCurrentUser();
+        if (user == null) {
+            finish();
+            startActivity(new Intent(this, LoginScreenActivity.class));
+        }
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
@@ -138,6 +148,7 @@ public class SignUpActivity extends AppCompatActivity {
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             databaseReference.child(user.getUid()).setValue(userInformation);
                             progressDialog.dismiss();
+
                             toast_text.setText("Welcome!!");
                             toast.show();
                             startActivity(new Intent(SignUpActivity.this, DashboardActivity.class));

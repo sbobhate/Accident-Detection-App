@@ -1,8 +1,8 @@
 package com.lifeline;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -27,34 +27,31 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by sanya on 3/12/16.
- */
-
 public class MyAccount extends AppCompatActivity {
 
-    private static final String KEY = "com.lifeline.secret";
-    private static final String STATE = "com.lifeline.state";
-
     private FirebaseAuth firebaseAuth;
-    private EditText editTextFirstName, editTextLastName, editTextPhoneNumber;
-    private Button btnSave;
-    private Toast toast;
-    private TextView toast_text;
-    private Typeface toast_font;
-    private LayoutInflater inflater;
-    private View layout;
-    private TextView textViewTitle;
+    private DatabaseReference databaseReference;
+    private ProgressDialog progressDialog;
+    private String policyNumber;
+
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
     String email="";
+    private EditText editFirstName, editLastName, editPhoneNumber;
+    private Button btnSave;
     ExpandableListAdapter listAdapter;
     ExpandableListView mDrawerexpList;
     List<String> listDataHeader;
@@ -66,45 +63,55 @@ public class MyAccount extends AppCompatActivity {
             R.drawable.logout,
     };
     private Typeface custom_font;
+    Toast toast;
+    TextView toast_text, textTitle;
+    Typeface toast_font;
+    LayoutInflater inflater;
+    View layout2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myaccount);
-
-        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
-        editor.putString(STATE, "myaccount");
-        editor.commit();
         custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-MediumCn.otf");
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        final FirebaseUser user = firebaseAuth.getCurrentUser();
+        if (user == null) {
+            finish();
+            startActivity(new Intent(this, LoginScreenActivity.class));
+        }
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
         prepareListDataSignin();
         listAdapter=new ExpandableListAdapter1(this,listDataHeader,login_icons,custom_font,custom_font);
 
-        //Custom Toast
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
-        inflater = (LayoutInflater)this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) this.findViewById(R.id.toast));
-        toast_text = (TextView) layout.findViewById(R.id.tv);
+        inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        layout2 = inflater.inflate(R.layout.custom_toast, (ViewGroup)this.findViewById(R.id.toast));
+        toast_text = (TextView) layout2.findViewById(R.id.tv);
         toast = new Toast(this.getApplicationContext());
+
+        //Toast variables initialisation
         toast_text.setTypeface(toast_font);
         toast.setGravity(Gravity.BOTTOM, 0, 100);
         toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout);
+        toast.setView(layout2);
 
-        editTextFirstName = (EditText) findViewById(R.id.editTextFirstName);
-        editTextLastName = (EditText) findViewById(R.id.editTextLastName);
-        editTextPhoneNumber = (EditText) findViewById(R.id.editTextPhoneNumber);
+        editFirstName = (EditText) findViewById(R.id.editFirstName);
+        editLastName = (EditText) findViewById(R.id.editLastName);
+        editPhoneNumber = (EditText) findViewById(R.id.editPhoneNumber);
         btnSave = (Button) findViewById(R.id.btnSave);
-        textViewTitle = (TextView) findViewById(R.id.textViewTitle);
-        editTextPhoneNumber.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
-
+        textTitle = (TextView) findViewById(R.id.textTitle);
+        editPhoneNumber.addTextChangedListener(new PhoneNumberFormattingTextWatcher());
         //Changing font of all layout components
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");
-        editTextFirstName.setTypeface(custom_font);
-        editTextLastName.setTypeface(custom_font);
-        editTextPhoneNumber.setTypeface(custom_font);
+        editFirstName.setTypeface(custom_font);
+        editLastName.setTypeface(custom_font);
+        editPhoneNumber.setTypeface(custom_font);
         btnSave.setTypeface(custom_font, Typeface.BOLD);
-        textViewTitle.setTypeface(custom_font, Typeface.BOLD);
-
+        textTitle.setTypeface(custom_font, Typeface.BOLD);
 
         mTitle = mDrawerTitle = getTitle();
         mDrawerexpList = (ExpandableListView)findViewById(R.id.left_drawer);
@@ -126,19 +133,16 @@ public class MyAccount extends AppCompatActivity {
             public boolean onGroupClick(ExpandableListView parent, View v,
                                         int groupPosition, long id) {
                 if (groupPosition == 0) {
-                    finish();
-                    Intent intent = new Intent(MyAccount.this, DashboardActivity.class);
+                    Intent intent=new Intent(MyAccount.this, DashboardActivity.class);
                     startActivity(intent);
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 1) {
-                    finish();
                     Intent intent=new Intent(MyAccount.this, MyEmerContActivity.class);
                     startActivity(intent);
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 2) {
-                    // Already in this Activity
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 3){
@@ -195,13 +199,42 @@ public class MyAccount extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().getThemedContext();
         mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+
+
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Fetching Data...");
+        progressDialog.show();
+        databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<String> values = new ArrayList<String>(4);
+                for (DataSnapshot child : dataSnapshot.getChildren()) {
+                    values.add(child.getValue().toString());
+                }
+
+                if (!values.isEmpty()) {
+                    editFirstName.setText(values.get(0));
+                    editLastName.setText(values.get(1));
+                    editPhoneNumber.setText(values.get(2));
+                    policyNumber = values.get(3);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(MyAccount.this, "Could not retrieve data.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        progressDialog.dismiss();
     }
 
-    public void saveInfo(View view)
-    {
-        String firstName = editTextFirstName.getText().toString().trim();
-        String lastName = editTextLastName.getText().toString().trim();
-        String phoneNumber = editTextPhoneNumber.getText().toString().trim();
+
+    public void goToSave(View view) {
+        String firstName = editFirstName.getText().toString().trim();
+        String lastName = editLastName.getText().toString().trim();
+        String phoneNumber = editPhoneNumber.getText().toString().trim();
 
         if (TextUtils.isEmpty(firstName)) {
             Toast.makeText(this, "Please enter your first name", Toast.LENGTH_SHORT).show();
@@ -215,7 +248,20 @@ public class MyAccount extends AppCompatActivity {
             Toast.makeText(this, "Please enter your phone number", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        UserInformation userInformation = new UserInformation(firstName, lastName, policyNumber, phoneNumber);
+
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        progressDialog.setMessage("Saving...");
+        progressDialog.show();
+
+        databaseReference.child(user.getUid()).setValue(userInformation);
+
+        progressDialog.dismiss();
+        Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
     }
+
 
     private void prepareListDataSignin() {
         listDataHeader =new ArrayList<String>();
