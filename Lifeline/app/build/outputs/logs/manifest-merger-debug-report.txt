@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:2:1-78:12
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:3:5-27
 		INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml
@@ -37,7 +37,7 @@ ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main
 	android:name
 		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:9:22-64
 application
-ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:11:5-76:19
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:11:5-81:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.1] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\AndroidManifest.xml:25:5-20
@@ -151,21 +151,31 @@ ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main
 	android:name
 		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:60:25-79
 activity#com.lifeline.MyAccount
-ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:66:9-71:20
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:65:9-70:20
 	android:label
-		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:67:13-40
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:66:13-40
 	android:name
-		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:66:19-44
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:65:19-44
 action#android.intent.action.my_account
-ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:68:13-71
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:67:13-71
 	android:name
-		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:68:21-68
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:67:21-68
+activity#com.lifeline.SendSMSActivity
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:71:9-76:20
+	android:label
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:72:13-38
+	android:name
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:71:19-50
+action#android.intent.category.send_sms
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:73:13-71
+	android:name
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:73:21-68
 service#com.lifeline.SensorService
-ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:73:9-75:40
+ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:78:9-80:40
 	android:exported
-		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:75:13-37
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:80:13-37
 	android:name
-		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:74:13-42
+		ADDED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml:79:13-42
 uses-sdk
 INJECTED from C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\AndroidManifest.xml:21:5-23:78

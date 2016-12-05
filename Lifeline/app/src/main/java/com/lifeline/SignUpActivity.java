@@ -34,9 +34,6 @@ import java.util.ArrayList;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private static final String KEY = "com.lifeline.secret";
-    private static final String STATE = "com.lifeline.state";
-
     private EditText editTextEmail, editTextPassword;
     private Button buttonRegister;
     private Toast toast;
@@ -55,10 +52,6 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-
-        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
-        editor.putString(STATE, "signUp");
-        editor.commit();
 
         Bundle mBundle = getIntent().getExtras();
         firstName = mBundle.getString("firstName");
@@ -92,11 +85,6 @@ public class SignUpActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        final FirebaseUser user = firebaseAuth.getCurrentUser();
-        if (user == null) {
-            finish();
-            startActivity(new Intent(this, LoginScreenActivity.class));
-        }
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 

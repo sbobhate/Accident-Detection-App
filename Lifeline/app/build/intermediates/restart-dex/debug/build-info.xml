@@ -5,7 +5,7 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="110421222301852"
+    timestamp="125805499316851"
     token="4319590111839883554"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -27,7 +27,7 @@
         type="MAIN" />
 
     <build
-        timestamp="110421222301852"
+        timestamp="125805499316851"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\outputs\apk\app-debug.apk"

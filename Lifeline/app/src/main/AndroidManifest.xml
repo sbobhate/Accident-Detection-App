@@ -62,10 +62,15 @@
                 <category android:name="android.intent.category.ALTERNATIVE" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MyAccount"
             android:label=" my account">
             <action android:name="android.intent.action.my_account" />
+
+            <category android:name="android.intent.category.ALTERNATIVE" />
+        </activity>
+        <activity android:name=".SendSMSActivity"
+            android:label=" send sms">
+            <action android:name="android.intent.category.send_sms" />
 
             <category android:name="android.intent.category.ALTERNATIVE" />
         </activity>

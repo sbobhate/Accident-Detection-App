@@ -83,6 +83,13 @@
 
             <category android:name="android.intent.category.ALTERNATIVE" />
         </activity>
+        <activity
+            android:name="com.lifeline.SendSMSActivity"
+            android:label=" send sms" >
+            <action android:name="android.intent.category.send_sms" />
+
+            <category android:name="android.intent.category.ALTERNATIVE" />
+        </activity>
 
         <service
             android:name="com.lifeline.SensorService"

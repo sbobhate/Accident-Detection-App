@@ -22,9 +22,6 @@ import com.google.firebase.database.DatabaseReference;
 
 public class PersonalInfoActivity extends AppCompatActivity {
 
-    private static final String KEY = "com.lifeline.secret";
-    private static final String STATE = "com.lifeline.state";
-
     private EditText editTextFirstName, editTextLastName, editTextPolicyNumber, editTextPhoneNumber;
     private Button btnPersonal;
     private Toast toast;
@@ -38,10 +35,6 @@ public class PersonalInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
-
-        SharedPreferences.Editor editor = getSharedPreferences(KEY, MODE_PRIVATE).edit();
-        editor.putString(STATE, "personalInfo");
-        editor.commit();
 
         //Custom Toast
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
@@ -96,7 +89,9 @@ public class PersonalInfoActivity extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
+        Toast.makeText(this, "Go To Home", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, SignUpActivity.class);
         Bundle mBundle = new Bundle();
         mBundle.putString("firstName", firstName);
         mBundle.putString("lastName", lastName);
@@ -104,7 +99,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
         mBundle.putString("phoneNumber", phoneNumber);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.putExtras(mBundle);
+        finish();
         startActivity(intent);
-
     }
 }
