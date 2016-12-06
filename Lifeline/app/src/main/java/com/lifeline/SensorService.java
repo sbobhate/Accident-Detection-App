@@ -115,6 +115,7 @@ public class SensorService extends Service implements SensorEventListener {
         /*** Detect Accident ***/
         if (accelerationX > threshold || accelerationY > threshold || accelerationZ > threshold) {
             //timer.start();  // Sound the alarm
+            Toast.makeText(this, "Accident Detected", Toast.LENGTH_SHORT).show();
             Intent mIntent = new Intent();
             mIntent.setClass(this, SendSMSActivity.class);
             mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

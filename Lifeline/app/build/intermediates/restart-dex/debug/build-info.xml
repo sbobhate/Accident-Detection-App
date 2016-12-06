@@ -5,36 +5,36 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="262830242975954"
+    timestamp="276124030621859"
     token="4319590111839883554"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="399" />
+        duration="387" />
     <task
         name="instant-run-dex"
-        duration="32" />
+        duration="39" />
     <task
         name="instant-run-transform"
-        duration="25" />
+        duration="48" />
     <task
         name="verifier"
-        duration="5" />
+        duration="15" />
 
     <artifact
         location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\reload-dex\debug\classes.dex"
         type="RELOAD_DEX" />
 
     <build
-        timestamp="262777905652375"
+        timestamp="276040998315467"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="262830242975954"
+        timestamp="276124030621859"
         verifier="COMPATIBLE" >
         <artifact
             location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\reload-dex\debug\classes.dex"

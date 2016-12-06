@@ -9,10 +9,21 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.google.android.gms.internal.zzs.TAG;
 
 /**
  * Created by shantanubobhate on 12/3/16.
@@ -27,12 +38,16 @@ public class GPSHandler {
     private Context mContext;
     private LocationManager mLocationManager;
     private String currentAddress;
+    private String hospitalAddress;
 
     private List<Point> mPoints;
+    private List<String> items;
 
     public String getCurrentAddress() {
         return currentAddress;
     }
+
+    public String getHospitalAddress() { return hospitalAddress; }
 
     public GPSHandler(Context context) {
         mContext = context;
@@ -55,7 +70,7 @@ public class GPSHandler {
     private LocationListener mLocationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
-            getHospital(location);
+            findAddress(location);
 
             /*
              * Code for calculation Speed
@@ -77,7 +92,7 @@ public class GPSHandler {
         public void onProviderDisabled(String s) { }
     };
 
-    private void getHospital(Location location) {
+    private void findAddress(Location location) {
         Geocoder mGeocoder = new Geocoder(mContext);    // Object to get address using coordinates
         List<Address> addresses = null;                 // To hold the location and hospital addresses
 
@@ -85,6 +100,7 @@ public class GPSHandler {
         if (addresses.size() > 0) {
             currentAddress = addresses.get(0).getAddressLine(0);
         }
+
         try {
             addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), MAX_RESULTS);
         } catch (IOException e) {

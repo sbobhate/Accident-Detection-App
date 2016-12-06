@@ -164,6 +164,7 @@ public class SendSMSActivity extends Activity {
     public void cancelAlarm(View view) {
         mediaPlayeralarm.pause();
         timer.cancel();
+        finish();
     }
 
     protected void sendSMSMessage() {
