@@ -12,7 +12,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +29,7 @@ import java.util.List;
 public class SendSMSActivity extends Activity {
 
     private GPSHandler mGPSHandler;
-    Button send;
+    Button send, cancel;
     TextView phone1, name1;
     TextView timerText,emergencymessage;
     private static final String FORMAT = "%02d:%02d";
@@ -42,6 +45,7 @@ public class SendSMSActivity extends Activity {
     Typeface toast_font;
     LayoutInflater inflater;
     View layout2;
+    ImageView alarm;
 
     private MediaPlayer mediaPlayeralarm;
     public static int oneTimeOnly = 0;
@@ -78,6 +82,7 @@ public class SendSMSActivity extends Activity {
         phone1 = (TextView) findViewById(R.id.phone1);
         name1 = (TextView) findViewById(R.id.name1);
         send = (Button) findViewById(R.id.send);
+        cancel = (Button) findViewById(R.id.cancel);
         mediaPlayeralarm = MediaPlayer.create(this, R.raw.rising_swoops);
         db=new DBEmergency(this);
 
@@ -98,6 +103,23 @@ public class SendSMSActivity extends Activity {
         phone1.setText(phones);
 
         emergencymessage.setText(message);
+
+        final Animation animShake = AnimationUtils.loadAnimation(this, R.anim.shake);
+        alarm = (ImageView) findViewById(R.id.imageView2);
+        alarm.startAnimation(animShake);
+        timerText = (TextView) findViewById(R.id.timer);
+        emergencymessage = (TextView) findViewById(R.id.emergencymessage);
+        phone1 = (TextView) findViewById(R.id.phone1);
+        name1 = (TextView) findViewById(R.id.name1);
+        cancel = (Button) findViewById(R.id.cancel);
+        send = (Button) findViewById(R.id.send);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");
+        phone1.setTypeface(custom_font,Typeface.BOLD);
+        name1.setTypeface(custom_font,Typeface.BOLD);
+        emergencymessage.setTypeface(custom_font, Typeface.BOLD);
+        cancel.setTypeface(custom_font, Typeface.BOLD);
+        send.setTypeface(custom_font, Typeface.BOLD);
+        timerText.setTypeface(custom_font,Typeface.BOLD_ITALIC);
 
         //Toast variables initialisation
         toast_text.setTypeface(toast_font);
