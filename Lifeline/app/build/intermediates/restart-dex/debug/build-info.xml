@@ -5,29 +5,29 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="210202392006249"
+    timestamp="220233143663914"
     token="4319590111839883554"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="247" />
+        duration="1043" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="492" />
     <task
         name="verifier"
-        duration="2" />
+        duration="117" />
 
     <artifact
         location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="210202392006249"
+        timestamp="220233143663914"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\outputs\apk\app-debug.apk"

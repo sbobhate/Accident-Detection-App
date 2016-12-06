@@ -39,8 +39,10 @@ import java.util.Map;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    private FirebaseAuth firebaseAuth;
     private final int MY_PERMISSION_REQUEST_CODE = 1;
+    private PermissionHandler mPermissionHandler;
+
+    private FirebaseAuth firebaseAuth;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -70,6 +72,8 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-MediumCn.otf");
+
+        mPermissionHandler = new PermissionHandler(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -188,52 +192,21 @@ public class DashboardActivity extends AppCompatActivity {
 
     public void startTrackingWrapper(View view) {
         // Ask for Permissions
-        List<String> permissionsNeeded = new ArrayList<>();
-        final List<String> permissionList = new ArrayList<>();
+        // Add permissions to the permissionName List
+        List<String> permissionName = new ArrayList<>();
+        List<String> permissionTag = new ArrayList<>();
+        permissionName.add(Manifest.permission.ACCESS_FINE_LOCATION);
+        permissionName.add(Manifest.permission.READ_PHONE_STATE);
+        permissionName.add(Manifest.permission.SEND_SMS);
+        permissionTag.add("Access Location");
+        permissionTag.add("Read Phone State");
+        permissionTag.add("Send SMS");
 
-        if (!addPermission(permissionList, Manifest.permission.ACCESS_FINE_LOCATION)) permissionsNeeded.add("Location");
-        if (!addPermission(permissionList, Manifest.permission.READ_PHONE_STATE)) permissionsNeeded.add("Read Phone State");
-        if (!addPermission(permissionList, Manifest.permission.SEND_SMS)) permissionsNeeded.add("Send SMS");
-
-        if (permissionList.size() > 0) {
-            if (permissionsNeeded.size() > 0) {
-                // Need Rationale
-                String message = "You need to grant access to " + permissionsNeeded.get(0);
-                for (int ii = 1; ii < permissionsNeeded.size(); ii++) {
-                    message = message + ", " + permissionsNeeded.get(ii);
-                }
-
-                showRationaleMessage("App needs access to Location " + message, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        ActivityCompat.requestPermissions(DashboardActivity.this, permissionList.toArray(new String[permissionList.size()]), MY_PERMISSION_REQUEST_CODE);
-                    }
-                });
-                return;
-            }
-            ActivityCompat.requestPermissions(DashboardActivity.this, permissionList.toArray(new String[permissionList.size()]), MY_PERMISSION_REQUEST_CODE);
+        if (!mPermissionHandler.requestPermissions(MY_PERMISSION_REQUEST_CODE, permissionName, permissionTag)) {
             return;
         }
 
         startTracking();
-    }
-
-    // Function to show dialog of the rationale for the permission
-    private void showRationaleMessage(String message, DialogInterface.OnClickListener okListtener) {
-        new AlertDialog.Builder(this)
-                .setMessage(message)
-                .setPositiveButton("OK", okListtener)
-                .setNegativeButton("Cancel", null)
-                .create()
-                .show();
-    }
-
-    private boolean addPermission(List<String> permissionList, String permission) {
-        if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-            permissionList.add(permission);
-            if (!ActivityCompat.shouldShowRequestPermissionRationale(this, permission)) return false;
-        }
-        return true;
     }
 
     private void startTracking() {
@@ -257,26 +230,8 @@ public class DashboardActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSION_REQUEST_CODE:
-                Map<String, Integer> perms = new HashMap<>();
-
-                perms.put(Manifest.permission.ACCESS_FINE_LOCATION, PackageManager.PERMISSION_GRANTED);
-                perms.put(Manifest.permission.READ_PHONE_STATE, PackageManager.PERMISSION_GRANTED);
-                perms.put(Manifest.permission.SEND_SMS, PackageManager.PERMISSION_GRANTED);
-
-                for (int ii = 0; ii < permissions.length; ii++) {
-                    perms.put(permissions[ii], grantResults[ii]);
-                }
-
-                // Check for permissions granted
-                if (perms.get(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
-                        && perms.get(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED
-                        && perms.get(Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED)
-                {
-                    // All permissions granted
+                if (mPermissionHandler.handleRequestResult(requestCode, permissions, grantResults)) {
                     startTracking();
-                } else {
-                    Toast.makeText(this, "You Suck.", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(this, "Just Kidding. LOL...", Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
@@ -293,8 +248,6 @@ public class DashboardActivity extends AppCompatActivity {
         listDataHeader.add("Emergency Contacts");
         listDataHeader.add("My Account");
         listDataHeader.add("Log Out");
-
-
 
     }
 
