@@ -148,27 +148,23 @@ public class SendSMSActivity extends Activity {
         };
 
         timer.start();
-
-        //fetch the emergencey conatcts from DB
-        //populate the phone number where the SMS need to be sent
-
-        send.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //insertDummyContactWrapper();
-                sendSMSMessage();
-            }
-        });
-
     }
 
     public void cancelAlarm(View view) {
+        Toast.makeText(this, "Alarm was cancelled", Toast.LENGTH_SHORT).show();
         mediaPlayeralarm.pause();
         timer.cancel();
         finish();
     }
 
-    protected void sendSMSMessage() {
+    public void sendButtonPress(View view) {
+        sendSMSMessage();
+    }
 
+    protected void sendSMSMessage() {
+        Toast.makeText(this, "Sending SMS", Toast.LENGTH_SHORT).show();
+        mediaPlayeralarm.pause();
+        timer.cancel();
         try {
             for (int i=0; i<add.size(); i++){
             SmsManager smsManager = SmsManager.getDefault();
@@ -181,20 +177,6 @@ public class SendSMSActivity extends Activity {
             toast.show();
             e.printStackTrace();
         }
+        finish();
     }
-//    @TargetApi(Build.VERSION_CODES.M)
-//    private void insertDummyContactWrapper() {
-//        int hasWriteContactsPermission = checkSelfPermission(Manifest.permission.SEND_SMS);
-//        if (hasWriteContactsPermission != PackageManager.PERMISSION_GRANTED) {
-//              requestPermissions(new String[] {Manifest.permission.SEND_SMS},
-//                    REQUEST_CODE_ASK_PERMISSIONS);
-//
-//        }
-//
-//    }
-    @Override
-    public void onPause() {
-        super.onPause();
-    }
-
 }

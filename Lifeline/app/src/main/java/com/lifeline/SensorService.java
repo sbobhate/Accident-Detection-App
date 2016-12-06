@@ -31,9 +31,6 @@ public class SensorService extends Service implements SensorEventListener {
     private double accelerationX, accelerationY, accelerationZ;
 
     private int threshold = 15;
-    private ShakeDetector mShakeDetector;
-    private CountDownTimer timer;
-    private MediaPlayer mediaPlayeralarm;
 
     // Notification Manager
     private NotificationManager mNotificationManager;
@@ -61,36 +58,9 @@ public class SensorService extends Service implements SensorEventListener {
     public void onCreate() {
         super.onCreate();
 
-        mediaPlayeralarm = MediaPlayer.create(this, R.raw.rising_swoops);
-        timer = new CountDownTimer(10000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                mediaPlayeralarm.start();
-            }
-
-            public void onFinish() {
-                mediaPlayeralarm.stop();
-            }
-        };
-
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mSensorManager.registerListener(this, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);
-
-        /*
-         * The following shake detector code does not work
-         * Instead I have added code in the onSensorChanged method below to trigger the alarm
-         */
-        /*
-        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
-            @Override
-            public void onShake() {
-                // Do stuff! This is where we call sendSMS?
-                Toast.makeText(SensorService.this, "Shake Detected", Toast.LENGTH_SHORT).show();
-                timer.start();
-            }
-        });
-        */
 
         mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         showNotification();
@@ -114,8 +84,6 @@ public class SensorService extends Service implements SensorEventListener {
 
         /*** Detect Accident ***/
         if (accelerationX > threshold || accelerationY > threshold || accelerationZ > threshold) {
-            //timer.start();  // Sound the alarm
-            Toast.makeText(this, "Accident Detected", Toast.LENGTH_SHORT).show();
             Intent mIntent = new Intent();
             mIntent.setClass(this, SendSMSActivity.class);
             mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
