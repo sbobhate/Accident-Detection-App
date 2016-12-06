@@ -30,8 +30,6 @@ import java.util.List;
 
 public class LoginScreenActivity extends AppCompatActivity {
 
-    private static final int MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS = 1;
-
     private EditText editTextEmail, editTextPassword;
     private Button btnLogin;
     Toast toast;
@@ -47,16 +45,6 @@ public class LoginScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-
-        final List<String> permissionsList = new ArrayList<>();
-        addPermission(permissionsList, Manifest.permission.READ_PHONE_STATE);
-        addPermission(permissionsList, Manifest.permission.ACCESS_COARSE_LOCATION);
-        addPermission(permissionsList, Manifest.permission.SEND_SMS);
-
-        if (permissionsList.size() != 0) {
-            requestPermissions(permissionsList.toArray(new String[permissionsList.size()]),
-                    MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS);
-        }
 
         //Custom Toast
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
@@ -93,12 +81,6 @@ public class LoginScreenActivity extends AppCompatActivity {
             // Start Dashboard Activity
             finish();
             startActivity(new Intent(this, com.lifeline.DashboardActivity.class));
-        }
-    }
-
-    private void addPermission(List<String> permissionsList, String permission) {
-        if (checkSelfPermission(permission) != PackageManager.PERMISSION_GRANTED) {
-            permissionsList.add(permission);
         }
     }
 
@@ -148,32 +130,5 @@ public class LoginScreenActivity extends AppCompatActivity {
     {
         finish();
         startActivity(new Intent(this,PersonalInfoActivity.class));
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case MY_PERMISSION_REQUEST_MULTIPLE_PERMISSIONS: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    // permission was granted, yay!
-                    Toast.makeText(this, "Permissions Given", Toast.LENGTH_SHORT).show();
-                } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                    builder.setMessage("This application needs permissions!\n" +
-                            "Go to Applications > Application Manager\n" +
-                            "to give permission.")
-                            .setTitle("Will Crash")
-                            .setNeutralButton("OK", null);
-                    AlertDialog dialog = builder.create();
-                    dialog.show();
-                }
-                return;
-            }
-        }
     }
 }

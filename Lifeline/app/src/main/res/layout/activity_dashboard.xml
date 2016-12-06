@@ -34,7 +34,7 @@
             android:textColor="#bfdfdf"
             android:textSize="15sp"
             android:background="#003366"
-            android:onClick="startTracking"/>
+            android:onClick="startTrackingWrapper"/>
 
         <!--<TextView-->
             <!--android:id="@+id/textViewLogout"-->
