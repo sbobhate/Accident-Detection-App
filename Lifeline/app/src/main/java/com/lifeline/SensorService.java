@@ -118,6 +118,7 @@ public class SensorService extends Service implements SensorEventListener {
             Intent mIntent = new Intent();
             mIntent.setClass(this, SendSMSActivity.class);
             mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            stopSelf();
             startActivity(mIntent);
         }
     }

@@ -215,7 +215,7 @@ public class DashboardActivity extends AppCompatActivity {
             return;
         }
 
-        // startTracking();
+        startTracking();
     }
 
     // Function to show dialog of the rationale for the permission

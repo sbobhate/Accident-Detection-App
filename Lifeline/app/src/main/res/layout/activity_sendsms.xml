@@ -91,7 +91,8 @@
                 android:text="Cancel Text"
                 android:visibility="visible"
                 android:layout_marginLeft="40dp"
-                android:layout_marginStart="40dp" />
+                android:layout_marginStart="40dp"
+                android:onClick="cancelAlarm"/>
 
             <Button
                 android:id="@+id/send"

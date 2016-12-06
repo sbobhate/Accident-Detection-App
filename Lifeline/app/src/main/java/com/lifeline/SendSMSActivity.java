@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,11 +26,10 @@ import java.util.List;
 public class SendSMSActivity extends Activity {
 
     private GPSHandler mGPSHandler;
-    Button cancel, send;
+    Button send;
     TextView phone1, name1;
     TextView timerText,emergencymessage;
     private static final String FORMAT = "%02d:%02d";
-    final private int REQUEST_CODE_ASK_PERMISSIONS = 123;
     CountDownTimer timer;
     String names="",phones="", email="";
     String ph[]=new String[3];
@@ -43,7 +43,7 @@ public class SendSMSActivity extends Activity {
     LayoutInflater inflater;
     View layout2;
 
-    private MediaPlayer mediaPlayervoice, mediaPlayeralarm;
+    private MediaPlayer mediaPlayeralarm;
     public static int oneTimeOnly = 0;
     String message="";
     List<EmerContact> contact;
@@ -77,7 +77,6 @@ public class SendSMSActivity extends Activity {
         emergencymessage = (TextView) findViewById(R.id.emergencymessage);
         phone1 = (TextView) findViewById(R.id.phone1);
         name1 = (TextView) findViewById(R.id.name1);
-        cancel = (Button) findViewById(R.id.cancel);
         send = (Button) findViewById(R.id.send);
         mediaPlayeralarm = MediaPlayer.create(this, R.raw.rising_swoops);
         db=new DBEmergency(this);
@@ -113,12 +112,13 @@ public class SendSMSActivity extends Activity {
                 //here you can have your logic to set text to edittext
                 mediaPlayeralarm.start();
 
-                cancel.setEnabled(true);
                 send.setEnabled(true);
             }
 
             public void onFinish() {
                 mediaPlayeralarm.stop();
+                mediaPlayeralarm.release();
+                timer.cancel();
                 //insertDummyContactWrapper();
                 sendSMSMessage();
 
@@ -126,20 +126,6 @@ public class SendSMSActivity extends Activity {
         };
 
         timer.start();
-
-        cancel.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                timer.cancel();
-                toast.setText("Message Cancelled");
-                toast.show();
-                mediaPlayeralarm.stop();
-                cancel.setEnabled(false);
-                send.setEnabled(true);
-            }
-        });
-
-
 
         //fetch the emergencey conatcts from DB
         //populate the phone number where the SMS need to be sent
@@ -151,6 +137,11 @@ public class SendSMSActivity extends Activity {
             }
         });
 
+    }
+
+    public void cancelAlarm(View view) {
+        mediaPlayeralarm.pause();
+        timer.cancel();
     }
 
     protected void sendSMSMessage() {
@@ -179,31 +170,8 @@ public class SendSMSActivity extends Activity {
 //
 //    }
     @Override
-    public void onResume() {
-        super.onResume();
-    }
-    @Override
     public void onPause() {
         super.onPause();
     }
-    @Override
-    public void onDestroy() {
-        finish();
-    }
-    @Override
-    public void onSaveInstanceState(Bundle savedState) {
-        super.onSaveInstanceState(savedState);
-    }
-    protected void onStart() {
-        super.onStart();
-    }
-    protected void onStop() {
-        super.onStop();
-    }
-    @Override
-    public void onBackPressed() {
-        finish();
-    }
-
 
 }
