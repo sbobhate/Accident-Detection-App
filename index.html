@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Lifeline - EC601 Product Design Project by sbobhate</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Lifeline - EC601 Product Design Project</h1>
+          <h2>Repository for all the code and files concerning the Accident Prevention and Detection App (EC601 Product Design).</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/sbobhate/EC601Project/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/sbobhate/EC601Project/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/sbobhate/EC601Project" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="ec601project----lifeline" class="anchor" href="#ec601project----lifeline" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>EC601Project -- LIFELINE</h1>
+
+<p>Repository for all the code and files concerning the Accident Prevention and Detection App (EC601 Product Design).</p>
+
+<h2>
+<a id="developers" class="anchor" href="#developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developers</h2>
+
+<ul>
+<li><strong>Shantanu Bobhate</strong></li>
+<li><strong>Sanya Kalra</strong></li>
+<li><strong>Jennifer Goodell</strong></li>
+<li><strong>Kexuan Cui</strong></li>
+<li><strong>Xianglin Zhou</strong></li>
+</ul>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+
+<p>For our introuduction to product design course we decided to create an android app that would detect a car accident and alert first responders as well the users primary contacts. The product was aimed towards giving the users and their families a sense of security.</p>
+
+<h2>
+<a id="technologies-used" class="anchor" href="#technologies-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technologies Used</h2>
+
+<h3>
+<a id="android-studio" class="anchor" href="#android-studio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android Studio</h3>
+
+<p>We used Android Studio to develop the app. It can be downloaded from <a href="https://developer.android.com/studio/index.html">here</a>.</p>
+
+<h3>
+<a id="firebase" class="anchor" href="#firebase" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Firebase</h3>
+
+<p>We used Google Firebase to help us conduct user authentication and maintain a backend database for our application. We used the following videos and resources to understand how to incorporate Firebase into our app.</p>
+
+<p>Add the following dependency to the app-level <strong>build.gradle</strong> file:</p>
+
+<div class="highlight highlight-source-java"><pre>  compile <span class="pl-s"><span class="pl-pds">'</span>com.google.firebase:firebase-auth:9.6.1<span class="pl-pds">'</span></span>
+  compile <span class="pl-s"><span class="pl-pds">'</span>com.google.firebase:firebase-database:9.6.1<span class="pl-pds">'</span></span></pre></div>
+
+<p><strong>Code for Firebase Authentication:</strong></p>
+
+<div class="highlight highlight-source-java"><pre>  <span class="pl-k">private</span> <span class="pl-smi">FirebaseAuth</span> firebaseAuth
+
+  <span class="pl-c1">...</span>
+
+  <span class="pl-k">@Override</span>
+  <span class="pl-k">protected</span> <span class="pl-k">void</span> onCreate(<span class="pl-smi">Bundle</span> savedInstanceState) {
+    <span class="pl-v">super</span><span class="pl-k">.</span>onCreate(savedInstanceState);
+
+    <span class="pl-c1">...</span>
+
+    firebaseAuth <span class="pl-k">=</span> <span class="pl-smi">FirebaseAuth</span><span class="pl-k">.</span>getInstance();
+
+    <span class="pl-c">/* To Create a new User */</span>
+    firebaseAuth<span class="pl-k">.</span>createUserWithEmailAndPassword(email, password)
+          .addOnCompleteListener(<span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-k">OnCompleteListener&lt;<span class="pl-smi">AuthResult</span>&gt;</span>() {
+              <span class="pl-k">@Override</span>
+              <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onComplete</span>(<span class="pl-k">@NonNull</span> <span class="pl-k">Task&lt;<span class="pl-smi">AuthResult</span>&gt;</span> <span class="pl-v">task</span>) {
+                  progressDialog<span class="pl-k">.</span>dismiss();
+                  <span class="pl-k">if</span> (task<span class="pl-k">.</span>isSuccessful()) {
+                      <span class="pl-c">// Do something</span>
+                  }
+                  <span class="pl-k">else</span>
+                  {
+                      <span class="pl-c">// Display an Error Message</span>
+                  }
+              }
+          });
+
+    <span class="pl-c1">...</span>
+
+    <span class="pl-c">/* To Sign In a User */</span>
+    firebaseAuth<span class="pl-k">.</span>signInWithEmailAndPassword(email, password)
+          .addOnCompleteListener(<span class="pl-v">this</span>, <span class="pl-k">new</span> <span class="pl-k">OnCompleteListener&lt;<span class="pl-smi">AuthResult</span>&gt;</span>() {
+              <span class="pl-k">@Override</span>
+              <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onComplete</span>(<span class="pl-k">@NonNull</span> <span class="pl-k">Task&lt;<span class="pl-smi">AuthResult</span>&gt;</span> <span class="pl-v">task</span>) {
+                  <span class="pl-k">if</span> (task<span class="pl-k">.</span>isSuccessful()) {
+                      <span class="pl-c">// Do something</span>
+                  }
+                  <span class="pl-k">else</span>
+                  {
+                      <span class="pl-c">// Display an Error Message</span>
+                  }
+              }
+          });
+  }</pre></div>
+
+<p><strong>Code for Firebase Database:</strong></p>
+
+<div class="highlight highlight-source-java"><pre>  <span class="pl-k">private</span> <span class="pl-smi">FirebaseAuth</span> firebaseAuth;
+  <span class="pl-k">private</span> <span class="pl-smi">DatabaseReference</span> databaseReference;
+
+  <span class="pl-c1">...</span>
+  <span class="pl-k">@Override</span>
+  <span class="pl-k">protected</span> <span class="pl-k">void</span> onCreate(<span class="pl-smi">Bundle</span> savedInstanceState) {
+      <span class="pl-v">super</span><span class="pl-k">.</span>onCreate(savedInstanceState);
+
+      <span class="pl-c1">...</span>
+
+      firebaseAuth <span class="pl-k">=</span> <span class="pl-smi">FirebaseAuth</span><span class="pl-k">.</span>getInstance();
+
+      <span class="pl-k">final</span> <span class="pl-smi">FirebaseUser</span> user <span class="pl-k">=</span> firebaseAuth<span class="pl-k">.</span>getCurrentUser();
+      <span class="pl-k">if</span> (user <span class="pl-k">==</span> <span class="pl-c1">null</span>) {
+          finish();
+          startActivity(<span class="pl-k">new</span> <span class="pl-smi">Intent</span>(<span class="pl-v">this</span>, <span class="pl-smi">LoginScreenActivity</span><span class="pl-k">.</span>class));
+      }
+
+      databaseReference <span class="pl-k">=</span> <span class="pl-smi">FirebaseDatabase</span><span class="pl-k">.</span>getInstance()<span class="pl-k">.</span>getReference();
+
+      <span class="pl-c1">...</span>
+
+      <span class="pl-c">/* To retrieve data */</span>
+      databaseReference<span class="pl-k">.</span>child(user<span class="pl-k">.</span>getUid())<span class="pl-k">.</span>addListenerForSingleValueEvent(<span class="pl-k">new</span> <span class="pl-smi">ValueEventListener</span>() {
+          <span class="pl-k">@Override</span>
+          <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onDataChange</span>(<span class="pl-smi">DataSnapshot</span> <span class="pl-v">dataSnapshot</span>) {
+              <span class="pl-k">ArrayList&lt;<span class="pl-smi">String</span>&gt;</span> values <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;<span class="pl-smi">String</span>&gt;</span>(<span class="pl-c1">4</span>);
+              <span class="pl-k">for</span> (<span class="pl-smi">DataSnapshot</span> child <span class="pl-k">:</span> dataSnapshot<span class="pl-k">.</span>getChildren()) {
+                  values<span class="pl-k">.</span>add(child<span class="pl-k">.</span>getValue()<span class="pl-k">.</span>toString());
+              }
+
+              <span class="pl-k">if</span> (<span class="pl-k">!</span>values<span class="pl-k">.</span>isEmpty()) {
+                  <span class="pl-c">// Do something with the values</span>
+              }
+          }
+
+          <span class="pl-k">@Override</span>
+          <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onCancelled</span>(<span class="pl-smi">DatabaseError</span> <span class="pl-v">databaseError</span>) {
+              <span class="pl-c">// Display an Error Message</span>
+          }
+      });
+
+      <span class="pl-c">/* Write Data */</span>
+      <span class="pl-smi">UserInformation</span> userInformation <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">UserInformation</span>(firstName, lastName, policyNumber, phoneNumber);  
+      databaseReference<span class="pl-k">.</span>child(user<span class="pl-k">.</span>getUid())<span class="pl-k">.</span>setValue(userInformation);
+
+      <span class="pl-c1">...</span>
+  }
+
+  <span class="pl-c1">...</span>
+
+  <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">UserInformation</span> {
+
+      <span class="pl-k">public</span> <span class="pl-smi">String</span> firstName, lastName, policyNumber, phoneNumber;
+
+      <span class="pl-k">public</span> <span class="pl-en">UserInformation</span>() {
+      }
+
+      <span class="pl-k">public</span> <span class="pl-en">UserInformation</span>(<span class="pl-smi">String</span> <span class="pl-v">firstName</span>, <span class="pl-smi">String</span> <span class="pl-v">lastName</span>, <span class="pl-smi">String</span> <span class="pl-v">policyNumber</span>, <span class="pl-smi">String</span> <span class="pl-v">phoneNumber</span>) {
+          <span class="pl-v">this</span><span class="pl-k">.</span>firstName <span class="pl-k">=</span> firstName;
+          <span class="pl-v">this</span><span class="pl-k">.</span>lastName <span class="pl-k">=</span> lastName;
+          <span class="pl-v">this</span><span class="pl-k">.</span>policyNumber <span class="pl-k">=</span> policyNumber;
+          <span class="pl-v">this</span><span class="pl-k">.</span>phoneNumber <span class="pl-k">=</span> phoneNumber;
+      }
+  }</pre></div>
+
+<p><strong>A Demo for Firebase Authentication on Android:</strong></p>
+
+<p><a href="http://www.youtube.com/watch?v=cibssj4-WMw"><img src="http://img.youtube.com/vi/cibssj4-WMw/0.jpg" alt=""></a></p>
+
+<h3>
+<a id="google-api" class="anchor" href="#google-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google Api</h3>
+
+<p>We used the Google Maps Api to collect the users coordinates which we used to track the user's location as well as track the user's velocity. Our app's accident detection mechanism was activated at higher speeds. We also used this api to query the locations and the contacts of the closest hospitals.</p>
+
+<h2>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contents</h2>
+
+<p>This repository contains 2 android projects:</p>
+
+<ul>
+<li>Lifeline</li>
+<li>DataToCSV</li>
+</ul>
+
+<h3>
+<a id="lifeline" class="anchor" href="#lifeline" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lifeline</h3>
+
+<p>This folder contains all the files for our final app.</p>
+
+<h3>
+<a id="datatocsv" class="anchor" href="#datatocsv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DataToCSV</h3>
+
+<p>This folder contains all the files for the testing app we created in order to collect acceleration data. We used this data to create the classification model.</p>
+        </section>
+
+        <footer>
+          Lifeline - EC601 Product Design Project is maintained by <a href="https://github.com/sbobhate">sbobhate</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
