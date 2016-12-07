@@ -1,6 +1,7 @@
 package com.lifeline;
 
 import android.app.Activity;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -36,6 +37,8 @@ import java.util.List;
 public class SendSMSActivity extends Activity {
 
     private GPSHandler mGPSHandler;
+    private SmsManager mSmsManager;
+
     Button send, cancel;
     TextView phone1, name1;
     TextView timerText,emergencymessage;
@@ -70,6 +73,7 @@ public class SendSMSActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         mGPSHandler = new GPSHandler(this);
+        mSmsManager = SmsManager.getDefault();
 
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -145,7 +149,6 @@ public class SendSMSActivity extends Activity {
         phone1 = (TextView) findViewById(R.id.phone1);
         name1 = (TextView) findViewById(R.id.name1);
         cancel = (Button) findViewById(R.id.cancel);
-        send = (Button) findViewById(R.id.send);
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-UltLtCn.otf");
         phone1.setTypeface(custom_font,Typeface.BOLD);
         name1.setTypeface(custom_font,Typeface.BOLD);
@@ -167,7 +170,7 @@ public class SendSMSActivity extends Activity {
                 //here you can have your logic to set text to edittext
                 mediaPlayeralarm.start();
 
-                send.setEnabled(true);
+                // send.setEnabled(true);
             }
 
             public void onFinish() {
@@ -184,13 +187,10 @@ public class SendSMSActivity extends Activity {
     }
 
     public void cancelAlarm(View view) {
-        location = mGPSHandler.getCurrentAddress();
-        message = "Alert! It appears  that the " + username + " may have been in a car accident. " +  username + " has chosen you as their emergency contact. " + username + "'s current location is " + location + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";
-        emergencymessage.setText(message);
         Toast.makeText(this, "Alarm was cancelled", Toast.LENGTH_SHORT).show();
         mediaPlayeralarm.pause();
         timer.cancel();
-        // finish();
+        finish();
     }
 
     public void sendButtonPress(View view) {
@@ -198,21 +198,27 @@ public class SendSMSActivity extends Activity {
     }
 
     protected void sendSMSMessage() {
-        Toast.makeText(this, "Sending SMS", Toast.LENGTH_SHORT).show();
+        location = mGPSHandler.getCurrentAddress();
+        message = "Alert! It appears  that the " + username
+                + " may have been in a car accident. " +  username
+                + " has chosen you as their emergency contact. " + username
+                + "'s current location is " + location
+                + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";
+        emergencymessage.setText(message);
         mediaPlayeralarm.pause();
         timer.cancel();
-        try {
-            for (int i=0; i<add.size(); i++){
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(ph[i], null, message, null, null);
-                toast.setText("SMS sent to "+n[i]);
-                toast.show();}
-
-        } catch (Exception e) {
-            toast.setText("SMS failed, please try again. ");
-            toast.show();
-            e.printStackTrace();
-        }
-        finish();
+        //for (int i=0; i<add.size(); i++) {
+            try {
+                //ph[i]
+                PendingIntent sentPI;
+                String SENT = "SMS_SENT";
+                //sentPI = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
+                //Toast.makeText(this, ph[i], Toast.LENGTH_SHORT).show();
+                mSmsManager.sendTextMessage("06179813151", null, "Hello", null, null);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        //}
+        //finish();
     }
 }
