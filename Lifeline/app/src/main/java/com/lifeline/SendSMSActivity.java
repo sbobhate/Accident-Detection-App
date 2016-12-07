@@ -1,7 +1,9 @@
 package com.lifeline;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -21,6 +23,11 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +45,8 @@ public class SendSMSActivity extends Activity {
     String ph[]=new String[3];
     String n[]=new String[3];
     private FirebaseAuth firebaseAuth;
+    private DatabaseReference databaseReference;
+    private ProgressDialog progressDialog;
     private Typeface custom_font;
     String username="",location="", hospital="";
     Toast toast;
@@ -51,7 +60,7 @@ public class SendSMSActivity extends Activity {
     public static int oneTimeOnly = 0;
     String message="";
     List<EmerContact> contact;
-    ArrayList<EmerContact> add=new ArrayList<EmerContact>();
+    ArrayList<EmerContact> add = new ArrayList<>();
     DBEmergency db;
     /**
      * Called when the activity is first created.
@@ -63,13 +72,37 @@ public class SendSMSActivity extends Activity {
         mGPSHandler = new GPSHandler(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
-
         final FirebaseUser user = firebaseAuth.getCurrentUser();
-        email=user.getEmail();
-        
-        location = mGPSHandler.getCurrentAddress();
+        if (user == null) {
+            finish();
+            startActivity(new Intent(this, LoginScreenActivity.class));
+        }
+        email = user.getEmail();
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Fetching Data...");
+        progressDialog.show();
+        databaseReference.child(user.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<String> values = new ArrayList<String>(4);
+                for (DataSnapshot child : dataSnapshot.getChildren()) {
+                    values.add(child.getValue().toString());
+                }
 
-        message = "Alert! It appears  that the USER may have been in a car accident. USER has chosen you as their emergency contact. USER's current location is " + location + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";
+                if (!values.isEmpty()) {
+                    username = values.get(0) + " " + values.get(1);
+                }
+
+                progressDialog.dismiss();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Toast.makeText(SendSMSActivity.this, "Could not retrieve data.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         setContentView(R.layout.activity_sendsms);
 
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
@@ -151,10 +184,13 @@ public class SendSMSActivity extends Activity {
     }
 
     public void cancelAlarm(View view) {
+        location = mGPSHandler.getCurrentAddress();
+        message = "Alert! It appears  that the " + username + " may have been in a car accident. " +  username + " has chosen you as their emergency contact. " + username + "'s current location is " + location + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";
+        emergencymessage.setText(message);
         Toast.makeText(this, "Alarm was cancelled", Toast.LENGTH_SHORT).show();
         mediaPlayeralarm.pause();
         timer.cancel();
-        finish();
+        // finish();
     }
 
     public void sendButtonPress(View view) {

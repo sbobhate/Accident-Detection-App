@@ -219,6 +219,8 @@ public class MyAccount extends AppCompatActivity {
                     editPhoneNumber.setText(values.get(2));
                     policyNumber = values.get(3);
                 }
+
+                progressDialog.dismiss();
             }
 
             @Override
@@ -226,8 +228,6 @@ public class MyAccount extends AppCompatActivity {
                 Toast.makeText(MyAccount.this, "Could not retrieve data.", Toast.LENGTH_SHORT).show();
             }
         });
-
-        progressDialog.dismiss();
     }
 
 

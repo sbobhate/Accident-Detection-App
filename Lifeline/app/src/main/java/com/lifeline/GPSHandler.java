@@ -10,6 +10,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -31,12 +32,13 @@ import static com.google.android.gms.internal.zzs.TAG;
 
 public class GPSHandler {
 
-    private static final long MIN_TIME = 1000;
-    private static final float MIN_DISTANCE = 1f;
+    private static final long MIN_TIME = 0;
+    private static final float MIN_DISTANCE = 0;
     private static final int MAX_RESULTS = 1;
 
     private Context mContext;
     private LocationManager mLocationManager;
+    private Geocoder mGeocoder;
     private String currentAddress;
     private String hospitalAddress;
 
@@ -51,7 +53,7 @@ public class GPSHandler {
 
     public GPSHandler(Context context) {
         mContext = context;
-        mLocationManager = (LocationManager) context.getSystemService(mContext.LOCATION_SERVICE);
+        mLocationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -62,7 +64,8 @@ public class GPSHandler {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME, MIN_DISTANCE, mLocationListener);
+        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME, MIN_DISTANCE, mLocationListener);
+        mGeocoder = new Geocoder(mContext);    // Object to get address using coordinates
 
         mPoints = new ArrayList<>();
     }
@@ -70,6 +73,7 @@ public class GPSHandler {
     private LocationListener mLocationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
+            Log.d("debug", "location changed");
             findAddress(location);
 
             /*
@@ -93,17 +97,15 @@ public class GPSHandler {
     };
 
     private void findAddress(Location location) {
-        Geocoder mGeocoder = new Geocoder(mContext);    // Object to get address using coordinates
         List<Address> addresses = null;                 // To hold the location and hospital addresses
+        try {
+            addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), MAX_RESULTS);
+        } catch (IOException e) {
+        }
 
         currentAddress = "";
         if (addresses.size() > 0) {
             currentAddress = addresses.get(0).getAddressLine(0);
-        }
-
-        try {
-            addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), MAX_RESULTS);
-        } catch (IOException e) {
         }
     }
 
