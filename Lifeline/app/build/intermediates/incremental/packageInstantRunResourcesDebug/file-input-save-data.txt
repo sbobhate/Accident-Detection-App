@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 07 21:56:24 EST 2016
+#Wed Dec 07 23:32:31 EST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml

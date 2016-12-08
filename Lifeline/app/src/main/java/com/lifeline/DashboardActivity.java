@@ -246,9 +246,9 @@ public class DashboardActivity extends AppCompatActivity {
 
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) return true;
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("This function needs your GPS, do you want to enable it now?")
-                .setTitle("Enable GPS")
+        AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
+        builder.setTitle("Enable GPS")
+                .setMessage("This function needs your GPS, do you want to enable it now?")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -258,6 +258,7 @@ public class DashboardActivity extends AppCompatActivity {
                 });
         AlertDialog dialog = builder.create();
         dialog.show();
+
 
         return false;
     }

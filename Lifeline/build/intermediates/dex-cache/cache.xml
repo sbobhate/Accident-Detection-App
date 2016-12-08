@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="a897496c41dce202db37b26e9e3216a0af78b0b7">
+        sha1="69a7ff6892355cc6a4fcbf35fd2b7e1f3366c2e0">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ef06fadd2a4a67aff980f00d9481e6a04044129f\classes.dex" />
     </item>
     <item
@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="997926d5de3ea7dd6f3f97d66540cc0b351cb27d">
+        sha1="9ba44ca2727f474fbc6229b2cc48ebcf8f9b9caf">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_823ee9662f098f10d92b37c0cd1a8890cc4526cd\classes.dex" />
     </item>
     <item
