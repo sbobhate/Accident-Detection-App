@@ -39,6 +39,8 @@ public class SendSMSActivity extends Activity {
     private GPSHandler mGPSHandler;
     private SmsManager mSmsManager;
 
+    private List<String> hospitals;
+
     Button send, cancel;
     TextView phone1, name1;
     TextView timerText,emergencymessage;
@@ -74,6 +76,8 @@ public class SendSMSActivity extends Activity {
 
         mGPSHandler = new GPSHandler(this);
         mSmsManager = SmsManager.getDefault();
+
+        hospitals = mGPSHandler.getHospitalAddress();
 
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -203,22 +207,21 @@ public class SendSMSActivity extends Activity {
                 + " may have been in a car accident. " +  username
                 + " has chosen you as their emergency contact. " + username
                 + "'s current location is " + location
-                + " . Nearby hospitals include HOSPITAL1, HOSPITAL2";
+                + " . Nearby hospitals include ";
+        for (String hospital : hospitals) {
+            message += hospital + "; ";
+        }
+        ArrayList<String> dividedMessage = mSmsManager.divideMessage(message);
         emergencymessage.setText(message);
         mediaPlayeralarm.pause();
         timer.cancel();
-        //for (int i=0; i<add.size(); i++) {
+        for (int i=0; i < add.size(); i++) {
             try {
-                //ph[i]
-                PendingIntent sentPI;
-                String SENT = "SMS_SENT";
-                //sentPI = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
-                //Toast.makeText(this, ph[i], Toast.LENGTH_SHORT).show();
-                mSmsManager.sendTextMessage("06179813151", null, "Hello", null, null);
+                mSmsManager.sendMultipartTextMessage(ph[i].replaceAll("[-() ]", ""), null, dividedMessage, null, null);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        //}
-        //finish();
+        }
+        finish();
     }
 }

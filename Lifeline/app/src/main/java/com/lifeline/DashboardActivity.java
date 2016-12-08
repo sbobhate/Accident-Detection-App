@@ -8,7 +8,9 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -202,9 +204,9 @@ public class DashboardActivity extends AppCompatActivity {
         permissionTag.add("Read Phone State");
         permissionTag.add("Send SMS");
 
-        if (!mPermissionHandler.requestPermissions(MY_PERMISSION_REQUEST_CODE, permissionName, permissionTag)) {
-            return;
-        }
+        if (!mPermissionHandler.requestPermissions(MY_PERMISSION_REQUEST_CODE, permissionName, permissionTag)) return;
+
+        if (!locationServicesStatusCheck()) return;
 
         startTracking();
     }
@@ -237,6 +239,27 @@ public class DashboardActivity extends AppCompatActivity {
             default:
                 super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+    }
+
+    private boolean locationServicesStatusCheck() {
+        final LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) return true;
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("This function needs your GPS, do you want to enable it now?")
+                .setTitle("Enable GPS")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                    }
+                });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        return false;
     }
 
     private void prepareListDataSignin() {

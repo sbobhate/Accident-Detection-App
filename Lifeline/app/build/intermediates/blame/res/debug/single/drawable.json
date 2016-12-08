@@ -172,12 +172,12 @@
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\drawable\\lock_32px.png"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_phone.png",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\drawable\\blue_phone.png"
-    },
-    {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_phone.png",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\drawable\\blue_phone.png"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",

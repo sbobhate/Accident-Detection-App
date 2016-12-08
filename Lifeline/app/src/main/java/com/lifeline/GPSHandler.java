@@ -40,7 +40,7 @@ public class GPSHandler {
     private LocationManager mLocationManager;
     private Geocoder mGeocoder;
     private String currentAddress;
-    private String hospitalAddress;
+    private List<String> hospitalAddresses;
 
     private List<Point> mPoints;
     private List<String> items;
@@ -49,7 +49,7 @@ public class GPSHandler {
         return currentAddress;
     }
 
-    public String getHospitalAddress() { return hospitalAddress; }
+    public List<String> getHospitalAddress() { return hospitalAddresses; }
 
     public GPSHandler(Context context) {
         mContext = context;
@@ -68,13 +68,15 @@ public class GPSHandler {
         mGeocoder = new Geocoder(mContext);    // Object to get address using coordinates
 
         mPoints = new ArrayList<>();
+        hospitalAddresses = new ArrayList<>();
     }
 
     private LocationListener mLocationListener = new LocationListener() {
         @Override
         public void onLocationChanged(Location location) {
             Log.d("debug", "location changed");
-            findAddress(location);
+            findCurrentAddress(location);
+            findHospitalAddress(location);
 
             /*
              * Code for calculation Speed
@@ -96,7 +98,7 @@ public class GPSHandler {
         public void onProviderDisabled(String s) { }
     };
 
-    private void findAddress(Location location) {
+    private void findCurrentAddress(Location location) {
         List<Address> addresses = null;                 // To hold the location and hospital addresses
         try {
             addresses = mGeocoder.getFromLocation(location.getLatitude(), location.getLongitude(), MAX_RESULTS);
@@ -107,6 +109,45 @@ public class GPSHandler {
         if (addresses.size() > 0) {
             currentAddress = addresses.get(0).getAddressLine(0);
         }
+    }
+
+    private void findHospitalAddress(Location location) {
+        final String locationParm = location.getLatitude() + "," + location.getLongitude();
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                InputStream inputStream = null;
+                HttpURLConnection urlConnection = null;
+                try {
+                    // Connect to Google API Services
+                    URL url = new URL("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + locationParm + "&radius=5000&types=hospital&key=AIzaSyDoijibOb-tuDkGfJu6D_fMG10h8A5Epyk");
+                    urlConnection = (HttpURLConnection) url.openConnection();
+                    urlConnection.connect();
+
+                    // Get the data from the API
+                    inputStream = urlConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                    StringBuffer stringBuffer = new StringBuffer();
+                    String line;
+                    while ((line = bufferedReader.readLine()) != null) stringBuffer.append(line);
+
+                    // Parse data and convert it to a JSON Object
+                    JSONObject jsonObject = new JSONObject((stringBuffer.toString()));
+                    JSONArray results = jsonObject.getJSONArray("results"); // Returns the hospitals found
+
+                    hospitalAddresses.clear();
+                    for (int ii = 0; ii < results.length(); ++ii) {
+                        JSONObject jsonObjectEachResult = results.getJSONObject(ii);
+
+                        String name = jsonObjectEachResult.optString("name");
+                        String vicinity = jsonObjectEachResult.optString("vicinity");
+
+                        hospitalAddresses.add(name + " at " + vicinity);
+                    }
+                } catch (Exception ex) {}
+            }
+        }).start();
     }
 
     /*
