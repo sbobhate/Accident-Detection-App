@@ -62,11 +62,6 @@ public class DashboardActivity extends AppCompatActivity {
             R.drawable.logout,
     };
     private Typeface custom_font;
-    Toast toast;
-    TextView toast_text;
-    Typeface toast_font;
-    LayoutInflater inflater;
-    View layout2;
 
 
     @Override
@@ -79,6 +74,8 @@ public class DashboardActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+        CustomToastActivity.CustomToastActivity(this);
+
         prepareListDataSignin();
         listAdapter=new ExpandableListAdapter1(this,listDataHeader,login_icons,custom_font,custom_font);
 
@@ -88,18 +85,6 @@ public class DashboardActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(this, LoginScreenActivity.class));
         }
-
-        toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
-        inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layout2 = inflater.inflate(R.layout.custom_toast, (ViewGroup)this.findViewById(R.id.toast));
-        toast_text = (TextView) layout2.findViewById(R.id.tv);
-        toast = new Toast(this.getApplicationContext());
-
-        //Toast variables initialisation
-        toast_text.setTypeface(toast_font);
-        toast.setGravity(Gravity.BOTTOM, 0, 100);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout2);
 
         mTitle = mDrawerTitle = getTitle();
         mDrawerexpList = (ExpandableListView)findViewById(R.id.left_drawer);
@@ -142,8 +127,7 @@ public class DashboardActivity extends AppCompatActivity {
                         finish();
                         startActivity(new Intent(DashboardActivity.this, LoginScreenActivity.class));
                     } catch (Exception e) {
-                        toast.setText("Unsuccessful");
-                        toast.show();
+                        CustomToastActivity.showCustomToast("Unsuccessful");
                         e.printStackTrace();
                     }
                 }

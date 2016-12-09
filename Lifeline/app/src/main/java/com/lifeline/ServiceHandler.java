@@ -16,10 +16,10 @@ public class ServiceHandler {
     private SensorService mLocalService;
     private boolean isBound = false;
 
-    private Context context;
+    private Context mContext;
 
-    public ServiceHandler (Context tContext) {
-        this.context = tContext;
+    public ServiceHandler (Context context) {
+        this.mContext = context;
     }
 
     // Function to handle a new Service Connection
@@ -29,26 +29,20 @@ public class ServiceHandler {
             SensorService.LocalBinder mLocalBinder = (SensorService.LocalBinder) iBinder;
             mLocalService = mLocalBinder.getService();
             isBound = true;
-            // Display when connected
-            Toast.makeText(context, "Connected", Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onServiceDisconnected(ComponentName componentName) {
             isBound = false;
-            // Display when disconnected
-            Toast.makeText(context, "Disconnected", Toast.LENGTH_SHORT).show();
         }
     };
 
     void doBindService() {
-        Toast.makeText(context, "Bound", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(context, SensorService.class);
-        context.bindService(intent, myConnection, Context.BIND_AUTO_CREATE);
+        Intent intent = new Intent(mContext, SensorService.class);
+        mContext.bindService(intent, myConnection, Context.BIND_AUTO_CREATE);
     }
 
     void doUnbindService() {
-        Toast.makeText(context, "Unbound", Toast.LENGTH_SHORT).show();
-        context.unbindService(myConnection);
+        mContext.unbindService(myConnection);
     }
 }

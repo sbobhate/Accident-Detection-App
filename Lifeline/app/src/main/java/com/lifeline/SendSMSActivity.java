@@ -54,11 +54,7 @@ public class SendSMSActivity extends Activity {
     private ProgressDialog progressDialog;
     private Typeface custom_font;
     String username="",location="", hospital="";
-    Toast toast;
-    TextView toast_text;
-    Typeface toast_font;
-    LayoutInflater inflater;
-    View layout2;
+
     ImageView alarm;
 
     private MediaPlayer mediaPlayeralarm;
@@ -78,6 +74,8 @@ public class SendSMSActivity extends Activity {
         mSmsManager = SmsManager.getDefault();
 
         hospitals = mGPSHandler.getHospitalAddress();
+
+        CustomToastActivity.CustomToastActivity(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -113,11 +111,6 @@ public class SendSMSActivity extends Activity {
 
         setContentView(R.layout.activity_sendsms);
 
-        toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");
-        inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        layout2 = inflater.inflate(R.layout.custom_toast, (ViewGroup)this.findViewById(R.id.toast));
-        toast_text = (TextView) layout2.findViewById(R.id.tv);
-        toast = new Toast(this.getApplicationContext());
         timerText = (TextView) findViewById(R.id.timer);
         emergencymessage = (TextView) findViewById(R.id.emergencymessage);
         phone1 = (TextView) findViewById(R.id.phone1);
@@ -161,12 +154,6 @@ public class SendSMSActivity extends Activity {
         send.setTypeface(custom_font, Typeface.BOLD);
         timerText.setTypeface(custom_font,Typeface.BOLD_ITALIC);
 
-        //Toast variables initialisation
-        toast_text.setTypeface(toast_font);
-        toast.setGravity(Gravity.BOTTOM, 0, 100);
-        toast.setDuration(Toast.LENGTH_SHORT);
-        toast.setView(layout2);
-
         timer = new CountDownTimer(10000, 1000) {
 
             public void onTick(long millisUntilFinished) {
@@ -191,7 +178,7 @@ public class SendSMSActivity extends Activity {
     }
 
     public void cancelAlarm(View view) {
-        Toast.makeText(this, "Alarm was cancelled", Toast.LENGTH_SHORT).show();
+        CustomToastActivity.showCustomToast("Alarm was cancelled");
         mediaPlayeralarm.pause();
         timer.cancel();
         finish();
