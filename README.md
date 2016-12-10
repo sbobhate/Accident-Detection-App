@@ -1,5 +1,6 @@
 # EC601Project -- LIFELINE
 Repository for all the code and files concerning the Accident Prevention and Detection App (EC601 Product Design).
+Check out the website at https://sbobhate.github.io/EC601Project/
 
 ## Developers
 
