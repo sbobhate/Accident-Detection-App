@@ -18,7 +18,7 @@ For our introuduction to product design course we decided to create an android a
 
 Here are a few screenshots of the final App
 
-![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/emergency_contacts.png)
+![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/emergency_contacts.png =540x960)
 
 ![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/notification.png)
 
