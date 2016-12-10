@@ -14,6 +14,18 @@ Check out the website at https://sbobhate.github.io/EC601Project/
 
 For our introuduction to product design course we decided to create an android app that would detect a car accident and alert first responders as well the users primary contacts. The product was aimed towards giving the users and their families a sense of security.
   
+## Sceenshots
+
+Here are a few screenshots of the final App
+
+![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/emergency_contacts.png)
+
+![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/notification.png)
+
+![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/alert.png)
+
+![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/message.png)
+  
 ## Technologies Used
 
 ### Android Studio
