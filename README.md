@@ -18,13 +18,13 @@ For our introuduction to product design course we decided to create an android a
 
 Here are a few screenshots of the final App
 
-<img src="https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/emergency_contacts.png" width="540" height="960">
+<img src="https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/emergency_contacts.png" width="270" height="480">
 
-![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/notification.png)
+<img src="https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/notification.png" width="270" height="480">
 
-![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/alert.png)
+<img src="https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/alert.png" width="270" height="480">
 
-![](https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/message.png)
+<img src="https://raw.githubusercontent.com/sbobhate/EC601Project/master/Resources/message.png" width="270" height="480">
   
 ## Technologies Used
 
