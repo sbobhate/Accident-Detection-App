@@ -1,27 +1,23 @@
 [
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_big_media.xml"
-    },
-    {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\customtoolbar.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\customtoolbar.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
@@ -116,6 +112,10 @@
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_add.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_contact_add.xml"
+    },
+    {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\select_dialog_multichoice_material.xml"
     },
@@ -148,12 +148,20 @@
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\emercontact_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_edit.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_contact_edit.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contactedit_activity.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\contactedit_activity.xml"
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_send_sms.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_send_sms.xml"
+    },
+    {
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_contacts.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_my_contacts.xml"
+    },
+    {
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -180,20 +188,8 @@
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sendsms.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\activity_sendsms.xml"
-    },
-    {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mycontacts.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\mycontacts.xml"
-    },
-    {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\contactadd_activity.xml",
-        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\contactadd_activity.xml"
     },
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
@@ -226,5 +222,9 @@
     {
         "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
         "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_toolbar.xml",
+        "source": "C:\\Users\\shantanu\\Documents\\GitHub\\EC601Project\\Lifeline\\app\\src\\main\\res\\layout\\custom_toolbar.xml"
     }
 ]

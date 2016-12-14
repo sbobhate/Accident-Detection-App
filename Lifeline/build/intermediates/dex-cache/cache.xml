@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="69a7ff6892355cc6a4fcbf35fd2b7e1f3366c2e0">
+        sha1="5201fd17eecf055badb48136f0f7bbe99eae727a">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ef06fadd2a4a67aff980f00d9481e6a04044129f\classes.dex" />
     </item>
     <item
@@ -36,6 +36,15 @@
         revision="25.0.0"
         sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_a2fcd067d7ef0141efd881970d842fa716c6c850\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_6a5c53f1fb1bf2aa2079ea8d4a0de0156cee9df4\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -52,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9ba44ca2727f474fbc6229b2cc48ebcf8f9b9caf">
+        sha1="ff45fb7ed57b1df7d7c7aaa11e942cb9b08e8c75">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_823ee9662f098f10d92b37c0cd1a8890cc4526cd\classes.dex" />
     </item>
     <item
@@ -183,15 +192,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.0.1_2d5aec9281d9569ea72558b8e62f28e020d62f59\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -237,15 +237,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\shantanu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_3c45e3579c84d509514f045f40700eb18fdae28f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -270,6 +261,15 @@
         revision="25.0.0"
         sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
         <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_93c4ec9ed828c08e580a5b8d1c535985a99ff324\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shantanu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\shantanu\Documents\GitHub\EC601Project\Lifeline\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_e6adbac4816421e3c37882d915fa8723220f24be\classes.dex" />
     </item>
     <item
         is-multidex="true"

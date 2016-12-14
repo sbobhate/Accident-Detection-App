@@ -79,7 +79,7 @@ public class MyEmerContActivity extends ActionBarActivity
         prepareListDataSignin();
         listAdapter=new ExpandableListAdapter1(this,listDataHeader,login_icons,custom_font,custom_font);
 
-        setContentView(R.layout.mycontacts);
+        setContentView(R.layout.activity_my_contacts);
 
         //declarations
         toast_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-Cn.otf");

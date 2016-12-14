@@ -29,7 +29,7 @@
         android:layout_width="300sp"
         android:layout_height="1px"
         android:background="#003366"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/textViewTitle"
         android:layout_marginTop="35sp"
         android:layout_centerHorizontal="true"
         android:id="@+id/view1" />

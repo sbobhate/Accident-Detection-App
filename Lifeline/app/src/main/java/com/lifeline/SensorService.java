@@ -10,6 +10,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Binder;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.IBinder;
 import android.util.Log;
@@ -108,7 +109,7 @@ public class SensorService extends Service implements SensorEventListener {
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN) {
             Notification mNotification = new Notification.Builder(this)
-                    .setSmallIcon(R.drawable.bell)
+                    .setSmallIcon(R.drawable.alarm)
                     .setTicker(text)
                     .setContentTitle("Hello there!")
                     .setContentText(text)

@@ -2,6 +2,7 @@ package com.lifeline;
 
 import android.*;
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -26,6 +27,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
@@ -33,6 +35,11 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,12 +52,16 @@ public class DashboardActivity extends AppCompatActivity {
     private PermissionHandler mPermissionHandler;
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
+    private ServiceHandler mServiceHandler;
+    private static boolean isTracking;
+    private Button buttonToggleTracking;
+    private DBEmergency mDatabase;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    String email="";
     ExpandableListAdapter listAdapter;
     ExpandableListView mDrawerexpList;
     List<String> listDataHeader;
@@ -71,20 +82,17 @@ public class DashboardActivity extends AppCompatActivity {
         custom_font = Typeface.createFromAsset(getAssets(), "AvenirNextLTPro-MediumCn.otf");
 
         mPermissionHandler = new PermissionHandler(this);
-
         firebaseAuth = FirebaseAuth.getInstance();
-
+        mServiceHandler = new ServiceHandler(this);
+        isTracking = false;
+        buttonToggleTracking = (Button) findViewById(R.id.buttonToggleTracking);
         CustomToastActivity.CustomToastActivity(this);
+        mDatabase = new DBEmergency(this);
+
+        setupFirebase();
 
         prepareListDataSignin();
         listAdapter=new ExpandableListAdapter1(this,listDataHeader,login_icons,custom_font,custom_font);
-
-        final FirebaseUser user = firebaseAuth.getCurrentUser();
-
-        if (user == null) {
-            finish();
-            startActivity(new Intent(this, LoginScreenActivity.class));
-        }
 
         mTitle = mDrawerTitle = getTitle();
         mDrawerexpList = (ExpandableListView)findViewById(R.id.left_drawer);
@@ -122,14 +130,7 @@ public class DashboardActivity extends AppCompatActivity {
                     mDrawerLayout.closeDrawer(mDrawerexpList);
                 }
                 if (groupPosition == 3){
-                    try {
-                        firebaseAuth.signOut();
-                        finish();
-                        startActivity(new Intent(DashboardActivity.this, LoginScreenActivity.class));
-                    } catch (Exception e) {
-                        CustomToastActivity.showCustomToast("Unsuccessful");
-                        e.printStackTrace();
-                    }
+                    logout();
                 }
                 return false;
 
@@ -176,31 +177,63 @@ public class DashboardActivity extends AppCompatActivity {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (isTracking) {
+            toggleTracking();
+        }
+    }
+
     public void startTrackingWrapper(View view) {
-        // Ask for Permissions
-        // Add permissions to the permissionName List
-        List<String> permissionName = new ArrayList<>();
-        List<String> permissionTag = new ArrayList<>();
-        permissionName.add(Manifest.permission.ACCESS_FINE_LOCATION);
-        permissionName.add(Manifest.permission.READ_PHONE_STATE);
-        permissionName.add(Manifest.permission.SEND_SMS);
-        permissionTag.add("Access Location");
-        permissionTag.add("Read Phone State");
-        permissionTag.add("Send SMS");
+        if (isTracking) {
+            toggleTracking();
+        } else {
+            // Ask for Permissions
+            // Add permissions to the permissionName List
+            List<String> permissionName = new ArrayList<>();
+            List<String> permissionTag = new ArrayList<>();
+            permissionName.add(Manifest.permission.ACCESS_FINE_LOCATION);
+            permissionName.add(Manifest.permission.READ_PHONE_STATE);
+            permissionName.add(Manifest.permission.SEND_SMS);
+            permissionTag.add("Access Location");
+            permissionTag.add("Read Phone State");
+            permissionTag.add("Send SMS");
 
-        if (!mPermissionHandler.requestPermissions(MY_PERMISSION_REQUEST_CODE, permissionName, permissionTag)) return;
+            if (!mPermissionHandler.requestPermissions(MY_PERMISSION_REQUEST_CODE, permissionName, permissionTag)
+                    || !locationServicesStatusCheck() || !hasContact())
+                return;
 
-        if (!locationServicesStatusCheck()) return;
-
-        startTracking();
+            toggleTracking();
+        }
     }
 
-    private void startTracking() {
-        Intent intent = new Intent(DashboardActivity.this, TrackingActivity.class);
-        startActivity(intent);
+    private void toggleTracking() {
+        //Intent intent = new Intent(DashboardActivity.this, TrackingActivity.class);
+        //startActivity(intent);
+
+        if (isTracking) {
+            mServiceHandler.doUnbindService();
+            buttonToggleTracking.setText("Start Tracking");
+            isTracking = false;
+        } else {
+            mServiceHandler.doBindService();
+            buttonToggleTracking.setText("Stop Tracking");
+            isTracking = true;
+        }
     }
 
-    public void logout(View view)
+    private void setupFirebase() {
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        if (firebaseUser == null) {
+            finish();
+            startActivity(new Intent(this, LoginScreenActivity.class));
+        }
+    }
+
+    public void logout()
     {
         try {
             firebaseAuth.signOut();
@@ -217,7 +250,7 @@ public class DashboardActivity extends AppCompatActivity {
         switch (requestCode) {
             case MY_PERMISSION_REQUEST_CODE:
                 if (mPermissionHandler.handleRequestResult(requestCode, permissions, grantResults)) {
-                    startTracking();
+                    toggleTracking();
                 }
                 break;
             default:
@@ -233,6 +266,7 @@ public class DashboardActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(DashboardActivity.this);
         builder.setTitle("Enable GPS")
                 .setMessage("This function needs your GPS, do you want to enable it now?")
+                .setIcon(android.R.drawable.ic_menu_mylocation)
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
@@ -245,6 +279,17 @@ public class DashboardActivity extends AppCompatActivity {
 
 
         return false;
+    }
+
+    private boolean hasContact() {
+        String email = firebaseUser.getEmail();
+        List<EmerContact> contact = mDatabase.getContact(email);
+        if (contact.isEmpty()) {
+            CustomToastActivity.showCustomToast("Please add at least 1 Emergency Contact");
+            return false;
+        } else {
+            return true;
+        }
     }
 
     private void prepareListDataSignin() {

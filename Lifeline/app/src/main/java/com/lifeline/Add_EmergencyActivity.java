@@ -36,7 +36,7 @@ public class Add_EmergencyActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contactadd_activity);
+        setContentView(R.layout.activity_contact_add);
          firebaseAuth = FirebaseAuth.getInstance();
 
         final FirebaseUser user = firebaseAuth.getCurrentUser();

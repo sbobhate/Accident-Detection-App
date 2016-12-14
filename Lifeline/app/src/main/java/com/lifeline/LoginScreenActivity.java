@@ -1,14 +1,11 @@
 package com.lifeline;
 
-import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -24,9 +21,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class LoginScreenActivity extends AppCompatActivity {
 
@@ -119,7 +113,7 @@ public class LoginScreenActivity extends AppCompatActivity {
                         }
                         else
                         {
-                            toast_text.setText("Incorrect Credentials.");
+                            toast_text.setText("Incorrect Credentials or No Network.");
                             toast.show();
                         }
                     }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:layout_marginTop="5sp"
+        android:layout_below="@+id/emergencymessage"
+        android:layout_alignLeft="@+id/emergencymessage"
+        android:layout_alignStart="@+id/emergencymessage"
+        android:layout_alignRight="@+id/emergencymessage"
+        android:layout_alignEnd="@+id/emergencymessage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textcontactmain"
+        android:textColor="#003366"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Contacts"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/emergencymessagedescription"
+        android:layout_width="wrap_content"
+        android:textColor="#003366"
+        android:layout_height="wrap_content"
+        android:text="Message to send:"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="serif"
+        android:textStyle="normal|bold"
+        android:typeface="serif"
+        android:layout_below="@+id/phone1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/emergencymessage"
+        android:textColor="#003366"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="string/emergencymessage"
+        android:layout_below="@+id/emergencymessagedescription"
+        android:layout_alignLeft="@+id/cancel"
+        android:layout_alignStart="@+id/cancel"
+        android:layout_alignRight="@+id/send"
+        android:layout_alignEnd="@+id/send"
+        android:lineSpacingExtra="8sp" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:background="@drawable/button_back2"
+        android:layout_width="135sp"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Cancel Text"
+        android:layout_alignBaseline="@+id/send"
+        android:layout_alignBottom="@+id/send"
+        android:layout_toLeftOf="@id/imageView2"
+        android:layout_toStartOf="@id/imageView2"
+        android:onClick="cancelAlarm"/>
+
+    <Button
+        android:id="@+id/send"
+        android:background="@drawable/button_back2"
+        android:layout_width="135sp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:text="Send Text"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/emergencymessage"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:onClick="sendButtonPress"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:textColor="#003366"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="n1"
+        android:layout_below="@+id/textcontactmain"
+        android:layout_toLeftOf="@+id/emergencymessagedescription"
+        android:layout_toStartOf="@+id/emergencymessagedescription" />
+
+    <TextView
+        android:id="@+id/phone1"
+        android:textColor="#003366"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ph1"
+        android:layout_alignBaseline="@+id/name1"
+        android:layout_alignBottom="@+id/name1"
+        android:layout_toRightOf="@+id/emergencymessagedescription"
+        android:layout_toEndOf="@+id/emergencymessagedescription" />
+
+</RelativeLayout>
+
+
