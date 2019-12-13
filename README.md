@@ -172,6 +172,10 @@ Add the following dependency to the app-level **build.gradle** file:
 ### Google Api
 
 We used the Google Maps Api to collect the users coordinates which we used to track the user's location as well as track the user's velocity. Our app's accident detection mechanism was activated at higher speeds. We also used this api to query the locations and the contacts of the closest hospitals.
+
+### Send SMS
+The Send SMS Activity has three main activities:  a countdown timer, playing a sound file, and sending the SMS.  The timer and the sound file start when the page is opened.  When the countdown reaches zero, the sound file turns off and the SMS is sent.  The timer can be turned off when the user clicks the "cancel" button, which will also stop the sound file.  The SMS can be sent after cancellation if the user hits the "send" button.  
+
   
 ## Contents
 
